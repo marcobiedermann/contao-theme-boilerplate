@@ -1,0 +1,78 @@
+.ce_text {
+  @extend %clear;
+  margin-bottom: $margin-elements-bottom;
+
+  address,
+  blockquote,
+  dl,
+  hr,
+  p,
+  pre,
+  ol,
+  ul,
+  table {
+    margin-bottom: 1.5em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+  li {
+    margin-bottom: .5em;
+
+    ol,
+    ul {
+      margin-top: .5em;
+    }
+
+  }
+
+  p {
+
+    img {
+      margin-bottom: 1em;
+    }
+
+    img[style="float: left;"],
+    img[style="float: right;"] {
+      max-width: 50%;
+    }
+
+    img[style="float: left;"] {
+      margin-right: 1em;
+    }
+
+    img[style="float: right;"] {
+      margin-left: 1em;
+    }
+
+  }
+
+  table {
+    text-align: left;
+  }
+
+  td,
+  th {
+    border: 1px solid $color-border;
+    padding: .5em;
+    vertical-align: top;
+  }
+
+  @media screen and (max-width: $media-tiny) {
+
+    p {
+
+      img {
+        float: none !important;
+        margin: 0 0 1em !important;
+        max-width: 100% !important;
+      }
+
+    }
+
+  }
+
+}

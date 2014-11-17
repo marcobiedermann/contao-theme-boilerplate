@@ -1,0 +1,34 @@
+.ce_tabcontrol {
+
+  .tabcontrol_tabs {
+
+    ul {
+      @extend %clear;
+      @extend %list-unstyled;
+      margin: 0 -1em;
+    }
+
+  }
+
+  .tabs {
+    float: left;
+    padding: .5em 1em;
+  }
+
+  .selected {
+
+  }
+
+  .tabcontrol_panes {
+
+  }
+
+  .ce_tabcontrol_pane {
+
+  }
+
+  .panes {
+
+  }
+
+}

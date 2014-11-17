@@ -1,0 +1,11 @@
+.pdf_link {
+  @extend %clear;
+  float: right;
+  margin: 0 -.25em;
+
+  a {
+    float: left;
+    padding: 0 .25em;
+  }
+
+}

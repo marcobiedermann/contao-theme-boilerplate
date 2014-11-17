@@ -1,0 +1,64 @@
+// Typography
+
+$font-family: Arial;
+$font-family-fallback: sans-serif;
+$font-size: 1em;
+$font-weight: 400;
+
+$line-height: 1.5em;
+
+$font-family-headings: inherit;
+$font-size-h1: 2.5em;
+$font-size-h2: 2em;
+$font-size-h3: 1.5em;
+$font-size-h4: 1em;
+$font-size-h5: .75em;
+$font-size-h6: .5em;
+$font-weight-headings: 700;
+
+$font-size-headings: (
+  $font-size-h1,
+  $font-size-h2,
+  $font-size-h3,
+  $font-size-h4,
+  $font-size-h5,
+  $font-size-h6
+);
+
+$font-family-code: 'Courier New';
+$font-family-code-fallback: 'Courier New';
+
+// Visual
+
+$amount: 10%;
+
+// Layout
+
+$margin-elements-bottom: 2em;
+
+// Layers
+
+$z-index-submenu: 999;
+
+// Grid
+
+$grid-columns: 12;
+$grid-gutter: 4%;
+
+$media-tiny: 480px;
+$media-small: 767px;
+$media-medium: 1024px;
+$media-large: 1248px;
+
+// Paths
+
+$path-fonts: '/files/THEME_NAME/fonts';
+$path-img: '/files/THEME_NAME/img';
+
+// Icons
+
+$icons: (
+  'email',
+  'facebook',
+  'twitter'
+);

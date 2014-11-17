@@ -1,0 +1,42 @@
+.ce_download,
+.ce_downloads {
+  @extend %clear;
+  margin-bottom: $margin-elements-bottom;
+  position: relative;
+
+  img {
+    float: left;
+    margin-right: .5em;
+    margin-top: 3px;
+  }
+
+  a {
+    @extend %clear;
+    background: url('#{$path-img}/icons/download.png') no-repeat 100% 50%;
+    display: block;
+    overflow: hidden;
+    padding-right: 1.5em;
+  }
+
+  .mime_icon {
+
+  }
+
+  .size {
+    float: right;
+    font-size: .875em;
+  }
+
+}
+
+.ce_downloads {
+
+  ul {
+    @extend %list-unstyled;
+  }
+
+  li {
+
+  }
+
+}

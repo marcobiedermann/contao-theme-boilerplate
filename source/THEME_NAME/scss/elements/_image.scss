@@ -1,0 +1,40 @@
+/*---------- IMAGE ----------*/
+
+.image_container {
+
+  figcaption {
+    max-width: 100%;
+    width: auto;
+  }
+
+  &.float_above,
+  &.float_below {
+    margin: 0 0 1em !important;
+  }
+
+  &.float_left,
+  &.float_right {
+    max-width: 50%;
+    width: auto;
+  }
+
+  &.float_left {
+    margin: 0 1em 1em 0 !important;
+  }
+
+  &.float_right {
+    margin: 0 0 1em 1em !important;
+  }
+
+  @media screen and (max-width: $media-tiny) {
+
+    &.float_left,
+    &.float_right {
+      float: none;
+      max-width: inherit;
+      margin: 0 0 1em !important;
+    }
+
+  }
+
+}

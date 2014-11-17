@@ -1,0 +1,64 @@
+.ce_photoalbums2 {
+
+  &.pa2_image_fluid {
+
+    ul {
+      @extend %clear;
+      @extend %list-unstyled;
+      margin: -.25em;
+    }
+
+    li {
+      float: left;
+      padding: .25em;
+      width: (100% / 4);
+
+      @media screen and (max-width: $media-small) {
+        width: (100% / 3);
+      }
+
+      @media screen and (max-width: $media-tiny) {
+        width: (100% / 2);
+      }
+
+    }
+
+  }
+
+  .image {
+
+    &.even {
+
+    }
+
+    &.odd {
+
+    }
+
+  }
+
+  .info {
+
+  }
+
+  .date {
+
+  }
+
+  .event {
+
+  }
+
+  .place {
+
+  }
+
+  .photographer {
+
+  }
+
+  .numberOfAllImages {
+
+  }
+
+}

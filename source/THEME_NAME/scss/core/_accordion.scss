@@ -1,0 +1,21 @@
+.ce_accordion {
+  margin-bottom: .25em !important;
+
+  &.last {
+    margin-bottom: $margin-elements-bottom !important;
+  }
+
+  .toggler {
+    background-color: $color-input-bg;
+    cursor: pointer;
+    font-weight: bold;
+    outline: 0;
+    padding: .25em .5em;
+  }
+
+  .accordion {
+    @extend %clear;
+    padding: 1em .5em;
+  }
+
+}

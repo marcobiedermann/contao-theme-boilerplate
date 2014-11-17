@@ -1,0 +1,66 @@
+.mod_search {
+
+  .formbody {
+    @extend %clear;
+  }
+
+  .text {
+    -webkit-appearance: textfield;
+    float: left;
+    padding: .5em;
+    width: 75%;
+  }
+
+  .submit {
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
+    width: 25%;
+  }
+
+  .header {
+
+  }
+
+  &> div {
+
+    &.first {
+
+    }
+
+    &.last {
+
+    }
+
+    &.even {
+
+    }
+
+    &.odd {
+
+    }
+
+  }
+
+  .relevance {
+
+  }
+
+  .context {
+
+  }
+
+  .highlight {
+    color: $color-primary;
+    font-style: italic;
+  }
+
+  .url {
+
+  }
+
+  .filezize {
+
+  }
+
+}

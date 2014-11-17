@@ -1,0 +1,65 @@
+.mod_sitemap {
+  margin-bottom: $margin-elements-bottom;
+
+  ul {
+    @extend %list-unstyled;
+  }
+
+  li {
+
+    &.first {
+
+    }
+
+    &.last {
+
+    }
+
+    ul {
+
+    }
+
+  }
+
+  a {
+
+
+    &.active {
+
+    }
+
+    &.forward {
+
+    }
+
+    &.trail {
+
+    }
+
+  }
+
+  span {
+
+  }
+
+  .submenu {
+
+  }
+
+  .sibling {
+
+  }
+
+  .level_1 {
+
+  }
+
+  .level_2 {
+
+  }
+
+  .level_3 {
+
+  }
+
+}

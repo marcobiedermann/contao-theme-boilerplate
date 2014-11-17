@@ -1,0 +1,29 @@
+.icon {
+  background: url('#{$path-img}/icons/icons.png') no-repeat;
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+}
+
+.icon-2x {
+  height: 2em;
+  width: 2em;
+}
+
+.icon-3x {
+  height: 3em;
+  width: 3em;
+}
+
+.icon-4x {
+  height: 4em;
+  width: 4em;
+}
+
+@each $icon in $icons {
+
+  .icon-#{$icon} {
+    font-size: 1em;
+  }
+
+}

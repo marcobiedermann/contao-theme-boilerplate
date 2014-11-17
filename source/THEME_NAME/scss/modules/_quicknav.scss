@@ -1,0 +1,21 @@
+.mod_quicknav {
+  margin-bottom: $margin-elements-bottom;
+
+  .formbody {
+    @extend %clear;
+  }
+
+  .select,
+  .submit {
+    float: left;
+  }
+
+  .select {
+    width: 75%;
+  }
+
+  .submit {
+    width: 25%;
+  }
+
+}

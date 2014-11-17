@@ -1,0 +1,58 @@
+/*---------- PAGINATION ----------*/
+
+.pagination {
+  @extend %clear;
+  margin-top: 1em;
+
+  p {
+    float: right;
+  }
+
+  ul {
+    @extend %list-unstyled;
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 .5em;
+  }
+
+  a {
+    color: $color;
+
+    &:hover {
+      color: $color-link;
+    }
+
+  }
+
+  .link {
+
+  }
+
+  .previous {
+
+  }
+
+  .next {
+
+  }
+
+  .current {
+    color: $color-link;
+  }
+
+  @media screen and (max-width: $media-tiny) {
+
+    p {
+      float: none;
+    }
+
+    ul {
+      text-align: left;
+    }
+
+  }
+
+}

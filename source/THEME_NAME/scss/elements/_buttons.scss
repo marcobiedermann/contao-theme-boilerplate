@@ -1,0 +1,27 @@
+/*---------- BUTTONS ----------*/
+
+.back,
+.more {
+  @extend %clear;
+
+  a {
+    display: block;
+  }
+
+}
+
+.back {
+
+  a {
+    float: left;
+  }
+
+}
+
+.more {
+
+  a {
+    float: right;
+  }
+
+}

@@ -1,0 +1,30 @@
+.mod_booknav {
+  margin-bottom: $margin-elements-bottom;
+
+  ul {
+    @extend %list-unstyled;
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 .5em;
+  }
+
+  a {
+
+  }
+
+  .prev {
+    margin-left: 0;
+  }
+
+  .next {
+
+  }
+
+  .up {
+    margin-right: 0;
+  }
+
+}

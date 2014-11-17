@@ -1,0 +1,39 @@
+.ce_dlh_googlemaps {
+  margin-bottom: $margin-elements-bottom;
+
+  img {
+    max-width: inherit;
+  }
+
+  form {
+    @extend %clear;
+  }
+
+  .routinglink {
+
+  }
+
+  .text,
+  .submit {
+    height: $line-height + (.25em * 2); // fixes line-height issue in FF & on select tag
+    float: left;
+    padding: .25em .5em;
+  }
+
+  .text {
+    background: linear-gradient(to bottom, $color-input-bg, $color-input-bg); // prevents box-shadow on FFOS
+    background-color: $color-input-bg;
+    border: 1px solid $color-border;
+    color: $color-input;
+    width: 75%;
+  }
+
+  .submit {
+    background: linear-gradient(to bottom, $color-btn-bg, $color-btn-bg);
+    background-color: $color-btn-bg;
+    border: 1px solid transparent;
+    color: $color-btn;
+    width: 25%;
+  }
+
+}
