@@ -5,7 +5,11 @@ Desktop.ini
 Thumb.db
 
 *.log
-*sublime-project
-*sublime-workspace
 .sass-cache
 node_modules
+
+*.sublime-project
+*.sublime-workspace
+.idea
+.project
+_nodes
