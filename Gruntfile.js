@@ -40,7 +40,7 @@ module.exports = function(grunt) {
     concat: {
       options: {
       },
-      target: {
+      files: {
         src: [
           '<%= config.source %>/js/jquery.placeholder-2.0.8.js',
           '<%= config.source %>/js/script.js'
@@ -66,7 +66,7 @@ module.exports = function(grunt) {
     },
 
     cssmin: {
-      target: {
+      files: {
         expand: true,
         cwd: '<%= config.build %>/css',
         dest: '<%= config.build %>/css',
