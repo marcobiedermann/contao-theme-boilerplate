@@ -18,7 +18,7 @@ module.exports = function(grunt) {
       },
       files: {
         expand: true,
-        cwd: '<%= config.source %>/css',
+        cwd: '<%= config.build %>/css',
         dest: '<%= config.build %>/css',
         src: '**/*.css'
       }
@@ -31,8 +31,8 @@ module.exports = function(grunt) {
     cmq: {
       files: {
         expand: true,
-        cwd: '<%= config.build %>/css',
-        dest: '<%= config.source %>/css',
+        cwd: '<%= config.source %>/css',
+        dest: '<%= config.build %>/css',
         src: '**/*.css'
       }
     },
@@ -50,6 +50,12 @@ module.exports = function(grunt) {
     },
 
     copy: {
+      favicons: {
+        expand: true,
+        cwd: '<%= config.source %>',
+        dest: '<%= config.build %>',
+        src: '*{ico,jpg,png}'
+      },
       fonts: {
         expand: true,
         cwd: '<%= config.source %>/fonts',
@@ -96,7 +102,8 @@ module.exports = function(grunt) {
       options: {
         beautify: true,
         compress: false,
-        mangle: false
+        mangle: false,
+        preserveComments: 'some'
       },
       files: {
         '<%= config.build %>/js/main.js': ['<%= config.source %>/js/main.js']
@@ -121,12 +128,27 @@ module.exports = function(grunt) {
       options: {
 
       },
-      target: {
+      files: {
         expand: true,
         cwd: '<%= config.source %>/img',
         dest: '<%= config.build %>/img',
         ext: '.svg',
         src: ['**/*.svg']
+      }
+    },
+
+    svgstore: {
+      options: {
+        prefix : 'icon-',
+        svg: {
+          viewBox : '0 0 100 100',
+          xmlns: 'http://www.w3.org/2000/svg'
+        }
+      },
+      default: {
+        files: {
+          '<%= config.build %>/img/icons.svg': ['<%= config.build %>/img/icons/*.svg'],
+        }
       }
     },
 
@@ -183,9 +205,9 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'clean',
     'sass',
-    'autoprefixer',
     'cmq',
     'cssmin',
+    'autoprefixer',
     'concat',
     'uglify',
     'svgmin',
