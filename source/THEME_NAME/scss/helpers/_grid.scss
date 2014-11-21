@@ -1,12 +1,12 @@
 .inside {
-  @extend %clear;
+  @include clear();
   margin: 0 auto;
   max-width: 78em;
   width: 90%;
 }
 
 .row {
-  @extend %clear;
+  @include clear();
   margin-left: -($grid-gutter / 2);
   margin-right: -($grid-gutter / 2);
 }

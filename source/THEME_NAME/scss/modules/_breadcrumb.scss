@@ -4,8 +4,8 @@
   margin-bottom: $margin-elements-bottom;
 
   ul {
-    @extend %clear;
-    @extend %list-unstyled;
+    @include clear();
+    @include list-unstyled();
   }
 
   li {

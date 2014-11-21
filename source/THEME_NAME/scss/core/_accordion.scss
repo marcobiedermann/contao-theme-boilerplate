@@ -14,7 +14,7 @@
   }
 
   .accordion {
-    @extend %clear;
+    @include clear();
     padding: 1em .5em;
   }
 

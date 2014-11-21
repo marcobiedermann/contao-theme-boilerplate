@@ -2,7 +2,7 @@
   margin-bottom: $margin-elements-bottom;
 
   ul {
-    @extend %list-unstyled;
+    @include list-unstyled();
     text-align: center;
   }
 

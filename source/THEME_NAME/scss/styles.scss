@@ -4,13 +4,9 @@
 @import '_colors';
 @import '_fonts';
 
-// Helpers
+// Mixins
 
 @import 'helpers/_mixins';
-@import 'helpers/_utilities';
-@import 'helpers/_grid';
-@import 'helpers/_animations';
-@import 'helpers/_icons';
 
 // Base
 
@@ -89,6 +85,13 @@
 // @import 'extensions/_photoalbums2';
 // @import 'extensions/_superfish';
 // @import 'extensions/_tabcontrol';
+
+// Helpers
+
+@import 'helpers/_utilities';
+@import 'helpers/_grid';
+@import 'helpers/_animations';
+@import 'helpers/_icons';
 
 // Print
 

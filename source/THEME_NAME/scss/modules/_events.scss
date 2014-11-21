@@ -10,7 +10,7 @@
   margin-bottom: $margin-elements-bottom;
 
   ul {
-    @extend %list-unstyled;
+    @include list-unstyled();
   }
 
   a {
@@ -56,7 +56,7 @@
   .layout_list,
   .layout_teaser,
   .layout_upcoming {
-    @extend %clear;
+    @include clear();
     border-bottom: 1px solid $color-border;
     margin-bottom: 1em;
     padding-bottom: .5em;

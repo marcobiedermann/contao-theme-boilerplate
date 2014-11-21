@@ -6,7 +6,7 @@
   }
 
   form {
-    @extend %clear;
+    @include clear();
   }
 
   .routinglink {

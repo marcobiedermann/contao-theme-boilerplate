@@ -2,7 +2,7 @@
 
 .back,
 .more {
-  @extend %clear;
+  @include clear();
 
   a {
     display: block;

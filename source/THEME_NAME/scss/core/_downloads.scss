@@ -1,6 +1,6 @@
 .ce_download,
 .ce_downloads {
-  @extend %clear;
+  @include clear();
   margin-bottom: $margin-elements-bottom;
   position: relative;
 
@@ -11,7 +11,7 @@
   }
 
   a {
-    @extend %clear;
+    @include clear();
     background: url('#{$path-img}/icons/download.png') no-repeat 100% 50%;
     display: block;
     overflow: hidden;
@@ -32,7 +32,7 @@
 .ce_downloads {
 
   ul {
-    @extend %list-unstyled;
+    @include list-unstyled();
   }
 
   li {

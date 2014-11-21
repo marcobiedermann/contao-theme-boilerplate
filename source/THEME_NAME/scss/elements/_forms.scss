@@ -1,7 +1,7 @@
 .formbody {
 
   div {
-    @extend %clear;
+    @include clear();
 
     &.mandatory {
 
@@ -107,7 +107,7 @@
 
   .checkbox_container,
   .radio_container {
-    @extend %clear;
+    @include clear();
     position: relative;
 
     &> span {
@@ -175,7 +175,7 @@
   }
 
   .submit_container {
-    @extend %clear;
+    @include clear();
     margin: -.25em;
   }
 

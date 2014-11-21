@@ -1,7 +1,7 @@
 /*---------- PAGINATION ----------*/
 
 .pagination {
-  @extend %clear;
+  @include clear();
   margin-top: 1em;
 
   p {
@@ -9,7 +9,7 @@
   }
 
   ul {
-    @extend %list-unstyled;
+    @include list-unstyled();
     text-align: center;
   }
 

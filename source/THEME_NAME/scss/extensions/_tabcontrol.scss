@@ -3,8 +3,8 @@
   .tabcontrol_tabs {
 
     ul {
-      @extend %clear;
-      @extend %list-unstyled;
+      @include clear();
+      @include list-unstyled();
       margin: 0 -1em;
     }
 

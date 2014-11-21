@@ -1,7 +1,7 @@
 .mod_navigation {
 
   ul {
-    @extend %list-unstyled;
+    @include list-unstyled();
   }
 
   a,
@@ -31,7 +31,7 @@
     white-space: nowrap;
 
     ul {
-      @extend %clear;
+      @include clear();
     }
 
     li {

@@ -1,7 +1,7 @@
 .mod_search {
 
   .formbody {
-    @extend %clear;
+    @include clear();
   }
 
   .text {

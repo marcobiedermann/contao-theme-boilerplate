@@ -1,5 +1,5 @@
 .pdf_link {
-  @extend %clear;
+  @include clear();
   float: right;
   margin: 0 -.25em;
 
