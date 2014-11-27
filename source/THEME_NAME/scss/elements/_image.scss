@@ -9,7 +9,7 @@
 
   &.float_above,
   &.float_below {
-    margin: 0 0 1em !important;
+    margin: 0 0 1em;
   }
 
   &.float_left,
@@ -19,11 +19,11 @@
   }
 
   &.float_left {
-    margin: 0 1em 1em 0 !important;
+    margin: 0 1em 1em 0;
   }
 
   &.float_right {
-    margin: 0 0 1em 1em !important;
+    margin: 0 0 1em 1em;
   }
 
   @media screen and (max-width: $media-tiny) {
@@ -32,7 +32,7 @@
     &.float_right {
       float: none;
       max-width: inherit;
-      margin: 0 0 1em !important;
+      margin: 0 0 1em;
     }
 
   }
