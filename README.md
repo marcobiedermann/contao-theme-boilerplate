@@ -1,7 +1,7 @@
 #Contao CMS Theme Template
 
 ##Compatible
-Compatible Version: [Contao 3.3.6](https://download.contao.org/3.3.6/zip)
+Compatible Version: [Contao 3.4.0](https://download.contao.org/3.4.0/zip)
 
 ##Requirements
 * [NodeJS](http://nodejs.org/)
