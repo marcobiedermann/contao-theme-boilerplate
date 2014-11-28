@@ -30,34 +30,46 @@
 
 @media screen and (max-width: $media-small) {
 
-  .row {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  %col-small {
-    float: none;
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
-  }
-
   @for $i from 1 through $grid-columns {
 
     .col-#{$i} {
-      @extend %col-small;
+      width: 100%;
     }
 
   }
 
 }
 
-@media screen and (max-width: $media-medium) {
+@media screen and (min-width: $media-small + 1) and (max-width: $media-medium) {
 
-  .col-#{1 / 2 * $grid-columns} {
+  @for $i from 1 through $grid-columns {
 
-    .col-#{1 / 2 * $grid-columns} {
-      width: 100%;
+    .col-#{$i}-md {
+      width: ($i / $grid-columns) * 100%;
+    }
+
+  }
+
+}
+
+@media screen and (min-width: $media-tiny + 1) and (max-width: $media-small) {
+
+  @for $i from 1 through $grid-columns {
+
+    .col-#{$i}-sm {
+      width: ($i / $grid-columns) * 100%;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: $media-tiny) {
+
+  @for $i from 1 through $grid-columns {
+
+    .col-#{$i}-xs {
+      width: ($i / $grid-columns) * 100%;
     }
 
   }
