@@ -13,3 +13,8 @@ node_modules
 .idea
 .project
 _nodes
+*.map
+
+files/THEME_NAME
+source/THEME_NAME/css/styles.css
+source/THEME_NAME/js/main.css
