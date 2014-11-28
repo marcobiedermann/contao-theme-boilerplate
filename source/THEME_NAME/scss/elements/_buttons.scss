@@ -1,11 +1,9 @@
-/*---------- BUTTONS ----------*/
-
 .back,
 .more {
   @include clear();
 
   a {
-    display: block;
+    display: inline-block;
   }
 
 }
