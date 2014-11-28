@@ -37,6 +37,7 @@ module.exports = function(grunt) {
 
     concat: {
       options: {
+        sourceMap: true
       },
       files: {
         src: [
@@ -103,8 +104,10 @@ module.exports = function(grunt) {
         mangle: false,
         preserveComments: 'some'
       },
-      files: {
-        '<%= config.build %>/js/main.js': ['<%= config.source %>/js/main.js']
+      traget: {
+        files: {
+          '<%= config.build %>/js/main.js': ['<%= config.source %>/js/main.js']
+        }
       }
 
     },
