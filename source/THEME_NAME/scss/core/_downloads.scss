@@ -40,3 +40,21 @@
   }
 
 }
+
+@if ($rtl) {
+
+  .ce_download,
+  .ce_downloads, {
+
+    img {
+      float: right;
+      margin-left: .5em;
+    }
+
+    .size {
+      float: left;
+    }
+
+  }
+
+}

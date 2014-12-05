@@ -9,3 +9,16 @@
   }
 
 }
+
+@if ($rtl) {
+
+  .pdf_link {
+    float: left;
+
+    a {
+      float: right;
+    }
+
+  }
+
+}

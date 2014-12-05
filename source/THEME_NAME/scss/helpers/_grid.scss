@@ -19,6 +19,19 @@
   padding-right: $grid-gutter / 2;
 }
 
+@if ($rtl) {
+
+  html[dir="rtl"] {
+
+    %col {
+      float: right;
+    }
+
+  }
+
+}
+
+
 @for $i from 1 through $grid-columns {
 
   .col-#{$i} {

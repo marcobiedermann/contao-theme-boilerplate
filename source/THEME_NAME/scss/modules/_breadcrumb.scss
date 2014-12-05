@@ -4,24 +4,12 @@
   ul {
     @include clear();
     @include list-unstyled();
+    margin: 0 -.5em;
   }
 
   li {
-    background: url('#{$path-img}/icons/breadcrumb.png') no-repeat 100% 50%;
     float: left;
-    margin-right: .5em;
-    padding-right: .75em;
-
-    &.first {
-      margin-left: 0;
-    }
-
-    &.last {
-      background: none;
-      margin-right: 0;
-      padding: 0;
-    }
-
+    margin: 0 .5em;
   }
 
   a {
@@ -29,6 +17,18 @@
   }
 
   .active {
+
+  }
+
+}
+
+@if ($rtl) {
+
+  .mod_breadcrumb {
+
+    li {
+      float: right;
+    }
 
   }
 

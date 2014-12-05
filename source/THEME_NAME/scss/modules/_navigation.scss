@@ -42,7 +42,7 @@
     &:hover,
     &:focus {
 
-      &> ul {
+      > ul {
         display: block;
       }
 
@@ -60,7 +60,7 @@
 
   .level_1 {
 
-    &> li {
+    > li {
       float: left;
       margin: 0 .5em;
 
@@ -99,8 +99,24 @@
 
     .level_1 {
 
-      &> li {
+      > li {
         float: none;
+      }
+
+    }
+
+  }
+
+}
+
+@if ($rtl) {
+
+  .nav-horizontal {
+
+    .level_1 {
+
+      > li {
+        float: right;
       }
 
     }

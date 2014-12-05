@@ -23,3 +23,25 @@
   }
 
 }
+
+@if ($rtl) {
+
+  html[dir="rtl"] {
+
+    .back {
+      a {
+        float: right;
+      }
+
+    }
+
+    .more {
+      a {
+        float: right;
+      }
+
+    }
+
+  }
+
+}
