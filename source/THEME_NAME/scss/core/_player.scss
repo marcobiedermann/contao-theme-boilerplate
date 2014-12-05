@@ -1,26 +1,26 @@
 .ce_player {
-  height: auto;
+  // height: auto;
   margin-bottom: $margin-elements-bottom;
-  max-width: 100%;
-  overflow: hidden;
-  padding-bottom: 100% / (16/9);
-  position: relative;
+  // max-width: 100%;
+  // overflow: hidden;
+  // padding-bottom: 100% / (16/9);
+  // position: relative;
 
-  embed,
-  iframe,
-  object {
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
+  // embed,
+  // iframe,
+  // object {
+  //   height: 100%;
+  //   left: 0;
+  //   position: absolute;
+  //   top: 0;
+  //   width: 100%;
+  // }
 
-  audio,
-  video {
-    height: auto;
-    max-width: 100%;
-    width: auto;
-  }
+  // audio,
+  // video {
+  //   height: auto;
+  //   max-width: 100%;
+  //   width: auto;
+  // }
 
 }
