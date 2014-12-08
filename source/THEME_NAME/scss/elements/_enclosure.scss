@@ -1,0 +1,21 @@
+.enclosure {
+
+  p {
+    @include clear();
+  }
+
+  a {
+    overflow: hidden;
+  }
+
+  .mime_icon {
+    float: left;
+    margin-right: .5em;
+    margin-top: 3px;
+  }
+
+  .size {
+
+  }
+
+}
