@@ -32,9 +32,6 @@
   .layout_simple,
   .layout_short {
     @include clear();
-    border-bottom: 1px solid $color-border;
-    margin-bottom: 1em;
-    padding-bottom: .5em;
   }
 
   .layout_full {
