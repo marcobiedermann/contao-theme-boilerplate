@@ -1,12 +1,7 @@
 .formbody {
 
-  div {
+  .widget {
     @include clear();
-
-    &.mandatory {
-
-    }
-
   }
 
   fieldset {
@@ -57,6 +52,7 @@
     background-color: $color-input-bg;
     border: 1px solid $color-border;
     color: $color-input;
+    float: left;
     height: $line-height + (.25em * 2); // fixes line-height issue in FF & on select tag
     padding: .25em .5em;
 
@@ -64,13 +60,6 @@
       border-color: $color-border-hover;
     }
 
-  }
-
-  select,
-  textarea,
-  .text,
-  .upload {
-    width: 100%;
   }
 
   .text {
@@ -154,8 +143,7 @@
 
   }
 
-  .captcha,
-  .captcha_text {
+  .captcha {
     float: left;
     width: (100% / 2);
 
@@ -205,32 +193,32 @@
 
 }
 
+.tableless,
 .tableform {
 
-  .formbody {
-
-    > table {
-      border-collapse: separate;
-      border-spacing: .5em;
-      margin: -.5em;
-    }
-
-    td {
-      vertical-align: top;
-    }
-
+  select,
+  textarea,
+  .text,
+  .upload {
+    width: 100%;
   }
 
 }
 
-.tableless {
+.formbody {
 
-  .formbody {
+  > table {
+    border-collapse: separate;
+    border-spacing: .5em;
+    margin: -.5em;
+  }
 
-    .widget {
-      margin-bottom: 1em;
-    }
+  td {
+    vertical-align: top;
+  }
 
+  .widget {
+    margin-bottom: 1em;
   }
 
 }
