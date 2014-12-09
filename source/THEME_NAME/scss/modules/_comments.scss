@@ -1,8 +1,40 @@
 .mod_comments {
   margin-bottom: $margin-elements-bottom;
 
-  .widget {
-    margin-bottom: 1em;
+  .comment_default {
+
+    &.first {
+
+    }
+
+    &.last {
+
+    }
+
+    &.even {
+
+    }
+
+    &.odd {
+
+    }
+
+  }
+
+  .info {
+
+    a {
+
+    }
+
+  }
+
+  .time {
+
+  }
+
+  .comment {
+
   }
 
 }
