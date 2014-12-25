@@ -1,7 +1,7 @@
 .inside {
   @include clear();
   margin: 0 auto;
-  max-width: 78em;
+  max-width: $grid-container;
   width: 90%;
 }
 
