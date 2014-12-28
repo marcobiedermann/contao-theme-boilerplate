@@ -27,20 +27,9 @@
     @include clear();
 
     img {
-      margin-bottom: 1em;
-    }
-
-    img[style="float: left;"],
-    img[style="float: right;"] {
-      max-width: 50%;
-    }
-
-    img[style="float: left;"] {
-      margin-right: 1em;
-    }
-
-    img[style="float: right;"] {
-      margin-left: 1em;
+      float: none !important;
+      margin: 0 0 1em !important;
+      max-width: 100% !important;
     }
 
   }
@@ -56,14 +45,23 @@
     vertical-align: top;
   }
 
-  @media screen and (max-width: $media-tiny) {
+  @media (min-width: $media-tiny) {
 
     p {
 
-      img {
-        float: none !important;
-        margin: 0 0 1em !important;
-        max-width: 100% !important;
+      img[style="float: left;"],
+      img[style="float: right;"] {
+        max-width: 50% !important;
+      }
+
+      img[style="float: left;"] {
+        float: left !important;
+        margin-right: 1em !important;
+      }
+
+      img[style="float: right;"] {
+        float: right !important;
+        margin-left: 1em !important;
       }
 
     }

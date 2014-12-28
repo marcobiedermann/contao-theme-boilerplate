@@ -49,12 +49,12 @@
   .layout_latest {
 
     .image_container {
-      max-width: 10em;
-      width: auto;
+      margin-bottom: 1em;
 
-      @media screen and (max-width: $media-tiny) {
-        margin: 0 0 1em;
-        max-width: inherit;
+      @media (min-width: $media-tiny) {
+        margin: 0;
+        max-width: 10em;
+        width: auto;
       }
 
     }
@@ -70,6 +70,7 @@
     a {
       display: block;
     }
+
   }
 
   .layout_short {

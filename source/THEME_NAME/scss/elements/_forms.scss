@@ -101,14 +101,14 @@
 
     > span {
       float: left;
-      width: (100% / 3);
+      width: (100% / 1);
 
-      @media screen and (max-width: $media-small) {
+      @media (min-width: $media-tiny) {
         width: (100% / 2);
       }
 
-      @media screen and (max-width: $media-tiny) {
-        width: (100% / 1);
+      @media (min-width: $media-small) {
+        width: (100% / 3);
       }
 
     }
@@ -144,12 +144,11 @@
   }
 
   .captcha {
-    float: left;
-    width: (100% / 2);
+    width: (100% / 1);
 
-    @media screen and (max-width: $media-tiny) {
-      float: none;
-      width: 100%;
+    @media (min-width: $media-small) {
+      float: left;
+      width: (100% / 2);
     }
 
   }

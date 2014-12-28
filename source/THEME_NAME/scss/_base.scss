@@ -203,6 +203,7 @@ select {
 textarea {
   -webkit-appearance: none;
   height: auto;
+  max-width: 100%;
   min-height: 10em;
   overflow: auto;
   resize: none;
