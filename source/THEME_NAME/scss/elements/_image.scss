@@ -2,7 +2,7 @@
 
   figcaption {
     max-width: 100%;
-    width: auto;
+    width: auto !important;
   }
 
   &.float_above,
@@ -10,27 +10,23 @@
     margin: 0 0 1em;
   }
 
-  &.float_left,
-  &.float_right {
-    max-width: 50%;
-    width: auto;
-  }
-
-  &.float_left {
-    margin: 0 1em 1em 0;
-  }
-
-  &.float_right {
-    margin: 0 0 1em 1em;
-  }
-
-  @media screen and (max-width: $media-tiny) {
+  @media (min-width: $media-tiny) {
 
     &.float_left,
     &.float_right {
-      float: none;
-      max-width: inherit;
+      max-width: 50%;
+      width: auto;
       margin: 0 0 1em;
+    }
+
+    &.float_left {
+      float: left;
+      margin: 0 1em 1em 0;
+    }
+
+    &.float_right {
+      float: right;
+      margin: 0 0 1em 1em;
     }
 
   }
