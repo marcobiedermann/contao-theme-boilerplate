@@ -2,13 +2,8 @@
   @include clear();
   margin-top: 1em;
 
-  p {
-    float: right;
-  }
-
   ul {
     @include list-unstyled();
-    text-align: center;
   }
 
   li {
@@ -41,14 +36,14 @@
     color: $color-link;
   }
 
-  @media screen and (max-width: $media-tiny) {
+  @media (min-width: $media-tiny) {
 
     p {
-      float: none;
+      float: right;
     }
 
     ul {
-      text-align: left;
+      text-align: center;
     }
 
   }

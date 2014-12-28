@@ -9,6 +9,7 @@
     li {
       float: left;
       padding: .25em;
+      width: (100% / 2);
     }
 
   }
@@ -21,21 +22,12 @@
 
   }
 
-  .cols_2 {
-
-    li {
-      width: (100% / 2);
-    }
-
-  }
-
   .cols_3 {
 
     li {
-      width: (100% / 3);
 
-      @media screen and (max-width: $media-tiny) {
-        width: (100% / 2);
+      @media (min-width: $media-tiny) {
+        width: (100% / 3);
       }
 
     }
@@ -45,14 +37,13 @@
   .cols_4 {
 
     li {
-      width: (100% / 4);
 
-      @media screen and (max-width: $media-small) {
+      @media (min-width: $media-tiny) {
         width: (100% / 3);
       }
 
-      @media screen and (max-width: $media-tiny) {
-        width: (100% / 2);
+      @media (min-width: $media-small) {
+        width: (100% / 4);
       }
 
     }
@@ -62,10 +53,9 @@
   .cols_5 {
 
     li {
-      width: (100% / 5);
 
-      @media screen and (max-width: $media-tiny) {
-        width: (100% / 2);
+      @media (min-width: $media-tiny) {
+        width: (100% / 5);
       }
 
     }
@@ -75,14 +65,13 @@
   .cols_6 {
 
     li {
-      width: (100% / 6);
 
-      @media screen and (max-width: $media-small) {
+      @media (min-width: $media-tiny) {
         width: (100% / 3);
       }
 
-      @media screen and (max-width: $media-tiny) {
-        width: (100% / 2);
+      @media (min-width: $media-small) {
+        width: (100% / 6);
       }
 
     }
@@ -92,10 +81,13 @@
   .cols_7 {
 
     li {
-      width: (100% / 7);
 
-      @media screen and (max-width: $media-tiny) {
-        width: (100% / 2);
+      @media (min-width: $media-tiny) {
+        width: (100% / 3);
+      }
+
+      @media (min-width: $media-small) {
+        width: (100% / 7);
       }
 
     }
@@ -105,10 +97,13 @@
   .cols_8 {
 
     li {
-      width: (100% / 8);
 
-      @media screen and (max-width: $media-small) {
+      @media (min-width: $media-tiny) {
         width: (100% / 4);
+      }
+
+      @media (min-width: $media-small) {
+        width: (100% / 8);
       }
 
     }
@@ -118,10 +113,13 @@
   .cols_9 {
 
     li {
-      width: (100% / 9);
 
-      @media screen and (max-width: $media-tiny) {
-        width: (100% / 2);
+      @media (min-width: $media-tiny) {
+        width: (100% / 4);
+      }
+
+      @media (min-width: $media-small) {
+        width: (100% / 9);
       }
 
     }
@@ -131,14 +129,13 @@
   .cols_10 {
 
     li {
-      width: (100% / 10);
 
-      @media screen and (max-width: $media-small) {
+      @media (min-width: $media-tiny) {
         width: (100% / 5);
       }
 
-      @media screen and (max-width: $media-tiny) {
-        width: (100% / 2);
+      @media (min-width: $media-small) {
+        width: (100% / 10);
       }
 
     }
@@ -148,10 +145,13 @@
   .cols_11 {
 
     li {
-      width: (100% / 11);
 
-      @media screen and (max-width: $media-tiny) {
-        width: (100% / 2);
+      @media (min-width: $media-tiny) {
+        width: (100% / 4);
+      }
+
+      @media (min-width: $media-small) {
+        width: (100% / 11);
       }
 
     }
@@ -161,14 +161,17 @@
   .cols_12 {
 
     li {
-      width: (100% / 12);
 
-      @media screen and (max-width: $media-small) {
+      @media (min-width: $media-tiny) {
+        width: (100% / 4);
+      }
+
+      @media (min-width: $media-small) {
         width: (100% / 6);
       }
 
-      @media screen and (max-width: $media-tiny) {
-        width: (100% / 2);
+      @media (min-width: $media-medium) {
+        width: (100% / 12);
       }
 
     }
