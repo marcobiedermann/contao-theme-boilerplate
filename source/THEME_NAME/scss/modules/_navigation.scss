@@ -50,28 +50,8 @@
 
     ul {
       background: $color-bg;
-      display: none;
       padding: .25em .5em;
-      position: absolute;
       z-index: $z-index-submenu;
-    }
-
-  }
-
-  .level_1 {
-
-    > li {
-      float: left;
-      margin: 0 .5em;
-
-      &.first {
-        margin-left: 0;
-      }
-
-      &.last {
-        margin-right: 0;
-      }
-
     }
 
   }
@@ -86,13 +66,13 @@
     top: 0;
   }
 
-  @media screen and (max-width: $media-small) {
+  @media (min-width: $media-small) {
 
     li {
 
       ul {
-        display: block;
-        position: static;
+        display: none;
+        position: absolute;
       }
 
     }
@@ -100,7 +80,17 @@
     .level_1 {
 
       > li {
-        float: none;
+        float: left;
+        margin: 0 .5em;
+
+        &.first {
+          margin-left: 0;
+        }
+
+        &.last {
+          margin-right: 0;
+        }
+
       }
 
     }
@@ -113,10 +103,14 @@
 
   .nav-horizontal {
 
-    .level_1 {
+    @media (min-width: $media-small) {
 
-      > li {
-        float: right;
+      .level_1 {
+
+        > li {
+          float: right;
+        }
+
       }
 
     }

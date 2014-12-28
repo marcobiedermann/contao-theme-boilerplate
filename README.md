@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/marcobiedermann/contao-theme-template.svg)](https://travis-ci.org/marcobiedermann/contao-theme-template)
+[![Build Status](https://travis-ci.org/marcobiedermann/contao-theme-template.svg)](https://travis-ci.org/marcobiedermann/contao-theme-template) [![Dependency Status](https://david-dm.org/marcobiedermann/contao-theme-template.svg)](https://david-dm.org/marcobiedermann/contao-theme-template) [![devDependency Status](https://david-dm.org/marcobiedermann/contao-theme-template/dev-status.svg)](https://david-dm.org/marcobiedermann/contao-theme-template#info=devDependencies)
 #Contao CMS Theme Template
 
 ##Compatible
