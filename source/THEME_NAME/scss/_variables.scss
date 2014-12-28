@@ -44,11 +44,12 @@ $z-index-submenu: 999;
 
 $grid-columns: 12;
 $grid-gutter: 2%;
+$grid-container: 78em;
 
-$media-tiny: 480px;
-$media-small: 640px;
-$media-medium: 960px;
-$media-large: 1248px;
+$media-tiny: 30em; // 480
+$media-small: 40em; // 640
+$media-medium: 60em; // 960
+$media-large: 78em; // 1248
 
 // Paths
 

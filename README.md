@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/marcobiedermann/contao-theme-template.svg)](https://travis-ci.org/marcobiedermann/contao-theme-template)
 #Contao CMS Theme Template
 
 ##Compatible
