@@ -63,13 +63,6 @@ module.exports = function(grunt) {
       },
     },
 
-    csslint: {
-      options: {
-        csslintrc: '.csslintrc'
-      },
-      files: ['<%= config.source %>/css/**/*.css']
-    },
-
     cssmin: {
       files: {
         expand: true,
@@ -184,7 +177,7 @@ module.exports = function(grunt) {
 
       svg: {
         files: ['<%= config.source %>/img/**/*.svg'],
-        tasks: []
+        tasks: ['svgmin', 'svgstore']
       },
 
       templates: {
@@ -214,7 +207,6 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['sass', 'watch']);
   grunt.registerTask('test', [
     'sass',
-    'csslint',
     'jshint'
   ]);
 
@@ -227,6 +219,7 @@ module.exports = function(grunt) {
     'concat',
     'uglify',
     'svgmin',
+    'svgstore',
     'imagemin'
   ]);
 

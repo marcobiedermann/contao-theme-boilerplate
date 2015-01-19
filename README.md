@@ -11,14 +11,14 @@ Compatible Version: [Contao 3.4.0](https://download.contao.org/3.4.0/zip)
 
 ##Installation
 1. [Download](https://github.com/marcobiedermann/contao-theme-template/archive/master.zip) the zip file from the master branch
-2. Copy the content to your contao installation
-3. Open *'/files/THEME_NAME'* in the terminal
-4. Install all packages `$ npm install`
+1. Copy the content to your contao installation
+1. Open *'/files/THEME_NAME'* in the terminal
+1. Install all packages `$ npm install`
 
 ##Usage
 1. Open *'files/THEME_NAME'* in the terminal
-2. Run the default grunt task `$ grunt`
-3. Cancle the task with `ctrl + c`
+1. Run the default grunt task `$ grunt`
+1. Cancle the task with `ctrl + c`
 
 
 ##License

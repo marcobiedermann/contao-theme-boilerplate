@@ -26,11 +26,7 @@ $font-size-headings: (
 );
 
 $font-family-code: 'Courier New';
-$font-family-code-fallback: 'Courier New';
-
-// Visual
-
-$amount: 10%;
+$font-family-code-fallback: monospace;
 
 // Layout
 
@@ -46,20 +42,12 @@ $grid-columns: 12;
 $grid-gutter: 2%;
 $grid-container: 78em;
 
-$media-tiny: 30em; // 480
-$media-small: 40em; // 640
-$media-medium: 60em; // 960
-$media-large: 78em; // 1248
+$media-tiny: 30em;
+$media-small: 40em;
+$media-medium: 60em;
+$media-large: 78em;
 
 // Paths
 
 $path-fonts: '/files/THEME_NAME/fonts';
 $path-img: '/files/THEME_NAME/img';
-
-// Icons
-
-$icons: (
-  'email',
-  'facebook',
-  'twitter'
-);
