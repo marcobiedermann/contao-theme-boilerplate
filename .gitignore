@@ -37,4 +37,4 @@ node_modules
 # Theme files
 files/THEME_NAME
 source/THEME_NAME/css/styles.css
-source/THEME_NAME/js/main.css
+source/THEME_NAME/js/main.js
