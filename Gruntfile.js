@@ -166,8 +166,8 @@ module.exports = function(grunt) {
       },
 
       js: {
-        files: ['<%= config.source %>/js/**/*.js'],
-        tasks: ['jshint']
+        files: ['<%= config.source %>/js/**/*.js', '!<%= config.source %>/js/main.js'],
+        tasks: ['jshint', 'concat']
       },
 
       sass: {
@@ -194,7 +194,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-jshint');
