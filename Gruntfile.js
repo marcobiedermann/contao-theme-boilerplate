@@ -59,7 +59,7 @@ module.exports = function(grunt) {
         expand: true,
         cwd: '<%= config.source %>/fonts',
         dest: '<%= config.build %>/fonts',
-        src: '**/*'
+        src: '**/*.{otf,svg,ttf,woff,woff2}',
       },
     },
 
@@ -92,9 +92,6 @@ module.exports = function(grunt) {
 
     uglify: {
       options: {
-        beautify: true,
-        compress: false,
-        mangle: false,
         preserveComments: 'some'
       },
       traget: {
@@ -211,6 +208,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build', [
     'clean',
+    'copy',
     'sass',
     'cmq',
     'cssmin',
