@@ -184,7 +184,7 @@
 
 }(this, document, jQuery));
 
-(function(){
+(function($){
 
   'use strict';
 
@@ -208,6 +208,6 @@
 
   }
 
-})();
+})(jQuery);
 
 //# sourceMappingURL=main.js.map
