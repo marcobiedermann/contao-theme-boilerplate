@@ -5,14 +5,14 @@
     ul {
       @include clear();
       @include list-unstyled();
-      margin: 0 -1em;
+      margin: 0 -1rem;
     }
 
   }
 
   .tabs {
     float: left;
-    padding: .5em 1em;
+    padding: .5rem 1rem;
   }
 
   .selected {

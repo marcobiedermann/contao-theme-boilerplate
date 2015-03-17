@@ -1,6 +1,6 @@
 .pagination {
   @include clear();
-  margin-top: 1em;
+  margin-top: 1rem;
 
   ul {
     @include list-unstyled();
@@ -8,7 +8,7 @@
 
   li {
     display: inline-block;
-    margin: 0 .5em;
+    margin: 0 .5rem;
   }
 
   a {

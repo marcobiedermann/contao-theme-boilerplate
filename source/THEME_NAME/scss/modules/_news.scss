@@ -49,11 +49,11 @@
   .layout_latest {
 
     .image_container {
-      margin-bottom: 1em;
+      margin-bottom: 1rem;
 
       @media (min-width: $media-tiny) {
         margin: 0;
-        max-width: 10em;
+        max-width: 10rem;
         width: auto;
       }
 
@@ -78,12 +78,12 @@
   }
 
   .info {
-    font-size: .875em;
+    font-size: .875rem;
     margin: 0;
   }
 
   .teaser {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     overflow: hidden;
   }
 

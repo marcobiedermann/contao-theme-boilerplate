@@ -58,8 +58,8 @@
   .layout_upcoming {
     @include clear();
     border-bottom: 1px solid $color-border;
-    margin-bottom: 1em;
-    padding-bottom: .5em;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
 
     &:last-of-type {
       border-bottom: 0;
@@ -96,9 +96,9 @@
   .header {
     background-color: $color-input-bg;
     float: left;
-    font-size: .875em;
-    margin-right: 1em;
-    padding: .25em .5em;
+    font-size: .875rem;
+    margin-right: 1rem;
+    padding: .25rem .5rem;
     text-align: center;
   }
 
@@ -107,7 +107,7 @@
   }
 
   .location {
-    margin-top: -2em;
+    margin-top: -2rem;
   }
 
 }
@@ -118,8 +118,9 @@
 
     .header {
       float: right;
-      margin-left: 1em;
+      margin-left: 1rem;
     }
 
   }
+
 }

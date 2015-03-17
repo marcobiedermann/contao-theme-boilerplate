@@ -5,7 +5,7 @@
 
   img {
     float: left;
-    margin-right: .5em;
+    margin-right: .5rem;
     margin-top: 3px;
   }
 
@@ -14,7 +14,7 @@
     background: url('#{$path-img}/icons/download.png') no-repeat 100% 50%;
     display: block;
     overflow: hidden;
-    padding-right: 1.5em;
+    padding-right: 1.5rem;
   }
 
   .mime_icon {
@@ -23,7 +23,7 @@
 
   .size {
     float: right;
-    font-size: .875em;
+    font-size: .875rem;
   }
 
 }
@@ -47,7 +47,7 @@
 
     img {
       float: right;
-      margin-left: .5em;
+      margin-left: .5rem;
     }
 
     .size {

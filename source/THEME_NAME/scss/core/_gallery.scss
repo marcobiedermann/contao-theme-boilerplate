@@ -4,11 +4,11 @@
   > ul {
     @include clear();
     @include list-unstyled();
-    margin: -.25em;
+    margin: -.25rem;
 
     li {
       float: left;
-      padding: .25em;
+      padding: .25rem;
       width: (100% / 2);
     }
 

@@ -50,7 +50,7 @@
 
     ul {
       background: $color-bg;
-      padding: .25em .5em;
+      padding: .25rem .5rem;
       z-index: $z-index-submenu;
     }
 
@@ -81,7 +81,7 @@
 
       > li {
         float: left;
-        margin: 0 .5em;
+        margin: 0 .5rem;
 
         &.first {
           margin-left: 0;

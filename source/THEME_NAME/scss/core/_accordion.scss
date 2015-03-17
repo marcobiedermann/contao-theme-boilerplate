@@ -1,5 +1,5 @@
 .ce_accordion {
-  margin-bottom: .25em !important;
+  margin-bottom: .25rem !important;
 
   &.last {
     margin-bottom: $margin-elements-bottom !important;
@@ -10,12 +10,12 @@
     cursor: pointer;
     font-weight: bold;
     outline: 0;
-    padding: .25em .5em;
+    padding: .25rem .5rem;
   }
 
   .accordion {
     @include clear();
-    padding: 1em .5em;
+    padding: 1rem .5rem;
   }
 
 }

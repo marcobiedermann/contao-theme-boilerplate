@@ -54,7 +54,7 @@
     color: $color-input;
     float: left;
     height: $line-height + (.25em * 2); // fixes line-height issue in FF & on select tag
-    padding: .25em .5em;
+    padding: .25rem .5rem;
 
     &:hover {
       border-color: $color-border-hover;
@@ -131,8 +131,8 @@
   .checkbox,
   .radio {
     float: left;
-    height: 1em;
-    margin: .25em .5em 0 .25em;
+    height: 1rem;
+    margin: .25rem .5rem 0 .25rem;
   }
 
   .checkbox {
@@ -158,12 +158,12 @@
   }
 
   .captcha_text {
-    padding: .25em .5em;
+    padding: .25rem .5rem;
   }
 
   .submit_container {
     @include clear();
-    margin: -.25em;
+    margin: -.25rem;
   }
 
   .submit,
@@ -172,8 +172,8 @@
     border: 1px solid transparent;
     color: $color-btn;
     height: $line-height + (.25em * 2);
-    margin: .25em;
-    padding: .25em 2em;
+    margin: .25rem;
+    padding: .25rem 2rem;
 
     &:hover,
     &:focus {
@@ -208,8 +208,8 @@
 
   > table {
     border-collapse: separate;
-    border-spacing: .5em;
-    margin: -.5em;
+    border-spacing: .5rem;
+    margin: -.5rem;
   }
 
   td {
@@ -217,7 +217,7 @@
   }
 
   .widget {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
   }
 
 }
@@ -238,7 +238,7 @@
   .checkbox,
   .radio {
     float: right;
-    margin: .25em .25em 0 .5em;
+    margin: .25em .25em 0 .5rem;
   }
 
  }

@@ -1,6 +1,6 @@
 .ce_text {
   @include clear();
-  margin-bottom: $margin-elements-bottom - 1.5em;
+  margin-bottom: $margin-elements-bottom - 1.5rem;
 
   blockquote,
   dl,
@@ -10,15 +10,15 @@
   ol,
   ul,
   table {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5rem;
   }
 
   li {
-    margin-bottom: .5em;
+    margin-bottom: .5rem;
 
     ol,
     ul {
-      margin-top: .5em;
+      margin-top: .5rem;
     }
 
   }
@@ -28,7 +28,7 @@
 
     img {
       float: none !important;
-      margin: 0 0 1em !important;
+      margin: 0 0 1rem !important;
       max-width: 100% !important;
     }
 
@@ -41,7 +41,7 @@
   td,
   th {
     border: 1px solid $color-border;
-    padding: .5em;
+    padding: .5rem;
     vertical-align: top;
   }
 
@@ -56,12 +56,12 @@
 
       img[style="float: left;"] {
         float: left !important;
-        margin-right: 1em !important;
+        margin-right: 1rem !important;
       }
 
       img[style="float: right;"] {
         float: right !important;
-        margin-left: 1em !important;
+        margin-left: 1rem !important;
       }
 
     }

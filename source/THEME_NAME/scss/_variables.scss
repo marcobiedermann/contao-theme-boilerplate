@@ -8,12 +8,12 @@ $font-weight: 400;
 $line-height: 1.5em;
 
 $font-family-headings: inherit;
-$font-size-h1: 2.5em;
-$font-size-h2: 2em;
-$font-size-h3: 1.5em;
-$font-size-h4: 1em;
-$font-size-h5: .75em;
-$font-size-h6: .5em;
+$font-size-h1: 2.5rem;
+$font-size-h2: 2rem;
+$font-size-h3: 1.5rem;
+$font-size-h4: 1rem;
+$font-size-h5: .75rem;
+$font-size-h6: .5rem;
 $font-weight-headings: 700;
 
 $font-size-headings: (
@@ -32,7 +32,7 @@ $font-family-code-fallback: monospace;
 
 $rtl: false;
 
-$margin-elements-bottom: 2em;
+$margin-elements-bottom: 2rem;
 
 $z-index-submenu: 999;
 
@@ -40,12 +40,12 @@ $z-index-submenu: 999;
 
 $grid-columns: 12;
 $grid-gutter: 2%;
-$grid-container: 78em;
+$grid-container: 78rem;
 
-$media-tiny: 30em;
-$media-small: 40em;
-$media-medium: 60em;
-$media-large: 78em;
+$media-tiny: 30rem;
+$media-small: 40rem;
+$media-medium: 60rem;
+$media-large: 78rem;
 
 // Paths
 
