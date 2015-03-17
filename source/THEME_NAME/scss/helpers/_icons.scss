@@ -5,15 +5,15 @@
 .icon {
   display: inline-block;
   fill: $color;
-  height: 1em;
+  height: 1rem;
   vertical-align: middle;
-  width: 1em;
+  width: 1rem;
 }
 
 @for $i from 2 through 4 {
 
   .icon-#{$i}x {
-    font-size: 1em * $i;
+    font-size: 1rem * $i;
   }
 
 }

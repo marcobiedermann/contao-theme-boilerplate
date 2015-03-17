@@ -4,12 +4,12 @@
   ul {
     @include clear();
     @include list-unstyled();
-    margin: 0 -.5em;
+    margin: 0 -.5rem;
   }
 
   li {
     float: left;
-    margin: 0 .5em;
+    margin: 0 .5rem;
   }
 
   a {

@@ -109,7 +109,7 @@ strong {
 blockquote {
   border-left: 3px solid $color-border;
   margin: 0;
-  padding-left: 1em;
+  padding-left: 1rem;
 
   p {
     font-style: italic;
@@ -127,12 +127,12 @@ blockquote {
 }
 
 dl {
-  margin: 0 0 .5em;
+  margin: 0 0 .5rem;
 }
 
 dd {
   margin: 0;
-  padding-left: 1.5em;
+  padding-left: 1.5rem;
 }
 
 button,
@@ -205,7 +205,7 @@ textarea {
   -webkit-appearance: none;
   height: auto;
   max-width: 100%;
-  min-height: 10em;
+  min-height: 10rem;
   overflow: auto;
   resize: none;
   vertical-align: top;
@@ -231,7 +231,7 @@ kdb,
 pre,
 samp {
   font-family: $font-family-code, $font-family-code-fallback;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 embed,
@@ -245,7 +245,7 @@ object {
 fieldset {
   border: 1px solid $color-border;
   margin: 0;
-  padding: .5em;
+  padding: .5rem;
   position: relative;
 }
 
@@ -272,8 +272,8 @@ footer {
   h#{$i} {
     @extend %headings;
     font-size: nth($font-size-headings, $i);
-    line-height: 1em + (1 / (nth($font-size-headings, $i) / .5em));
-    margin: 0 0 1em / (nth($font-size-headings, $i) / .5em);
+    line-height: 1.5em;
+    margin: 0 0 .5rem;
   }
 
 }
@@ -283,7 +283,7 @@ hr {
   border: 0;
   box-sizing: content-box;
   height: 1px;
-  margin: 0 0 1.5em;
+  margin: 0 0 1.5rem;
 }
 
 img {
@@ -306,7 +306,7 @@ label {
 legend {
   border: 0;
   display: block;
-  padding: 0 .25em;
+  padding: 0 .25rem;
   position: relative;
 }
 
@@ -317,19 +317,18 @@ progress {
 
 ol,
 ul {
-  list-style-position: inside;
-  margin: 0 0 .5em;
-  padding: 0;
+  margin: 0 0 .5rem;
+  padding: 0 0 0 1.5rem;
 
   ol,
   ul {
-    padding-left: 1.5em;
+    padding-left: 1.5rem;
   }
 
 }
 
 p {
-  margin: 0 0 .5em;
+  margin: 0 0 .5rem;
 }
 
 pre {
@@ -346,23 +345,23 @@ q {
 }
 
 small {
-  font-size: .75em;
+  font-size: .75rem;
 }
 
 sub,
 sup {
-  font-size: .75em;
+  font-size: .75rem;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
 
 sup {
-  top: -.5em;
+  top: -.5rem;
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -.25rem;
 }
 
 svg {
