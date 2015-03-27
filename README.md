@@ -25,7 +25,3 @@ Compatible Version: [Contao 3.4.4](https://download.contao.org/3.4.4/zip)
 
 ##Copyright
 All rights reserved. Marco Biedermann
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/marcobiedermann/contao-theme-template/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
