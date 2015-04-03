@@ -1,7 +1,18 @@
 .formbody {
 
+  > table {
+    border-collapse: separate;
+    border-spacing: .5rem;
+    margin: -.5rem;
+  }
+
+  td {
+    vertical-align: top;
+  }
+
   .widget {
     @include clear();
+    margin-bottom: 1rem;
   }
 
   fieldset {
@@ -153,10 +164,6 @@
 
   }
 
-  .captcha {
-
-  }
-
   .captcha_text {
     padding: .25rem .5rem;
   }
@@ -204,43 +211,26 @@
 
 }
 
-.formbody {
-
-  > table {
-    border-collapse: separate;
-    border-spacing: .5rem;
-    margin: -.5rem;
-  }
-
-  td {
-    vertical-align: top;
-  }
-
-  .widget {
-    margin-bottom: 1rem;
-  }
-
-}
-
 @if ($rtl) {
 
- .formbody {
+  .formbody {
 
-  .checkbox_container,
-  .radio_container {
+    .checkbox_container,
+    .radio_container {
 
-    > span {
+      > span {
+        float: right;
+      }
+
+    }
+
+    .checkbox,
+    .radio {
       float: right;
+      margin: .25em .25em 0 .5rem;
     }
 
   }
 
-  .checkbox,
-  .radio {
-    float: right;
-    margin: .25em .25em 0 .5rem;
-  }
-
- }
-
 }
+
