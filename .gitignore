@@ -35,6 +35,4 @@ bower_components
 node_modules
 
 # Theme files
-files/THEME_NAME
-source/THEME_NAME/css/styles.css
-source/THEME_NAME/js/main.js
+files/theme-name
