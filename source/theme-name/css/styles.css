@@ -117,7 +117,8 @@ button,
 button {
   background-color: transparent;
   background-image: none;
-  border-radius: 0; }
+  border-radius: 0;
+  padding: 0; }
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
