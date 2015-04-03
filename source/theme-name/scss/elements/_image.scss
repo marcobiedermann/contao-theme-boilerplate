@@ -9,9 +9,9 @@
 
     &.float_left,
     &.float_right {
+      margin: 0 0 1rem;
       max-width: 50%;
       width: auto;
-      margin: 0 0 1rem;
     }
 
     &.float_left {
