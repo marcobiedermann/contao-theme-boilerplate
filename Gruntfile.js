@@ -1,13 +1,19 @@
+'use strict';
+
 module.exports = function(grunt) {
 
-  'use strict';
+  require('jit-grunt')(grunt, {
+    cmq: 'grunt-combine-media-queries',
+    scsslint: 'grunt-scss-lint',
+  });
 
   grunt.initConfig({
 
     pkg: grunt.file.readJSON('package.json'),
     config: {
       source: 'source/<%= pkg.name %>',
-      build: 'files/<%= pkg.name %>'
+      build: 'files/<%= pkg.name %>',
+      tmp: '.tmp'
     },
 
     autoprefixer: {
@@ -16,14 +22,15 @@ module.exports = function(grunt) {
       },
       files: {
         expand: true,
-        cwd: '<%= config.build %>/css',
-        dest: '<%= config.build %>/css',
+        cwd: '<%= config.source %>/css',
+        dest: '<%= config.source %>/css',
         src: '**/*.css'
       }
     },
 
     clean: {
-      folder: ['<%= config.build %>']
+      dist: ['<%= config.build %>'],
+      sass: ['.sass-cache']
     },
 
     cmq: {
@@ -37,14 +44,13 @@ module.exports = function(grunt) {
 
     concat: {
       options: {
-        sourceMap: true
+        sourceMap: false
       },
       files: {
         src: [
-          '<%= config.source %>/js/jquery.placeholder-2.0.8.js',
           '<%= config.source %>/js/script.js'
         ],
-        dest: '<%= config.source %>/js/main.js',
+        dest: '<%= config.build %>/js/script.js',
       }
     },
 
@@ -53,7 +59,7 @@ module.exports = function(grunt) {
         expand: true,
         cwd: '<%= config.source %>',
         dest: '<%= config.build %>',
-        src: '*{ico,jpg,png}'
+        src: '*ico'
       },
       fonts: {
         expand: true,
@@ -76,9 +82,9 @@ module.exports = function(grunt) {
       files: {
         files: [{
           expand: true,
-          cwd: '<%= config.source %>/img',
+          cwd: '<%= config.source %>',
           src: '**/*.{gif,jpeg,jpg,png}',
-          dest: '<%= config.build %>/img'
+          dest: '<%= config.build %>'
         }]
       }
     },
@@ -87,60 +93,37 @@ module.exports = function(grunt) {
       options: {
         jshintrc: true
       },
-      files: ['<%= config.source %>/js/script.js']
+      files: [
+        'gruntfile.js',
+        '<%= config.source %>/js/**/*.js',
+        '!<%= config.source %>/js/libs/**/*.js'
+      ]
     },
 
     uglify: {
       options: {
-        preserveComments: 'some'
+        sourceMap: false
       },
-      traget: {
-        files: {
-          '<%= config.build %>/js/main.js': ['<%= config.source %>/js/main.js']
-        }
+      files: {
+        expand: true,
+        cwd: '<%= config.build %>/js',
+        dest: '<%= config.build %>/js',
+        src: '**/*.js',
       }
-
     },
 
     sass: {
-      options: {
-        style: 'expanded'
-      },
       files: {
         expand: true,
         cwd: '<%= config.source %>/scss',
         dest: '<%= config.source %>/css',
-        src: ['**/*.scss'],
+        src: '**/*.scss',
         ext: '.css'
       }
     },
 
-    svgmin: {
-      options: {
-
-      },
-      files: {
-        expand: true,
-        cwd: '<%= config.source %>/img',
-        dest: '<%= config.build %>/img',
-        ext: '.svg',
-        src: ['**/*.svg']
-      }
-    },
-
-    svgstore: {
-      options: {
-        prefix : 'icon-',
-        svg: {
-          viewBox : '0 0 100 100',
-          xmlns: 'http://www.w3.org/2000/svg'
-        }
-      },
-      default: {
-        files: {
-          '<%= config.build %>/img/icons.svg': ['<%= config.build %>/img/icons/*.svg'],
-        }
-      }
+    scsslint: {
+      files: ['<%= config.source %>/scss/**/*.scss']
     },
 
     watch: {
@@ -150,11 +133,12 @@ module.exports = function(grunt) {
 
       css: {
         files: ['<%= config.source %>/css/**/*.css'],
-        tasks: []
+        tasks: ['autoprefixer']
       },
 
       gruntfile: {
-        files: ['Gruntfile.js']
+        files: ['Gruntfile.js'],
+        tasks: ['jshint']
       },
 
       img: {
@@ -163,18 +147,13 @@ module.exports = function(grunt) {
       },
 
       js: {
-        files: ['<%= config.source %>/js/**/*.js', '!<%= config.source %>/js/main.js'],
-        tasks: ['jshint', 'concat']
+        files: ['<%= config.source %>/js/**/*.js'],
+        tasks: ['jshint']
       },
 
       sass: {
         files: ['<%= config.source %>/scss/**/*.scss'],
-        tasks: ['sass']
-      },
-
-      svg: {
-        files: ['<%= config.source %>/img/**/*.svg'],
-        tasks: ['svgmin', 'svgstore']
+        tasks: ['scsslint', 'sass']
       },
 
       templates: {
@@ -186,38 +165,51 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.loadNpmTasks('grunt-autoprefixer');
-  grunt.loadNpmTasks('grunt-combine-media-queries');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-svgmin');
-  grunt.loadNpmTasks('grunt-svgstore');
+  grunt.registerTask('default', [
+    // Linting
+    'jshint',
+    // 'scsslint',
 
-  grunt.registerTask('default', ['sass', 'watch']);
-  grunt.registerTask('test', [
+    // CSS
     'sass',
-    'jshint'
+    'autoprefixer',
+
+    // Watch
+    'watch'
+    ]);
+
+  grunt.registerTask('test', [
+    // Linting
+    'jshint',
+    // 'scsslint'
   ]);
 
   grunt.registerTask('build', [
-    'clean',
+    // Linting
+    'jshint',
+    // 'scsslint',
+
+    // Clean
+    'clean:dist',
+
+    // Copy
     'copy',
+
+    // CSS
     'sass',
+    'autoprefixer',
     'cmq',
     'cssmin',
-    'autoprefixer',
+
+    // JavaScript
     'concat',
     'uglify',
-    'svgmin',
-    'svgstore',
-    'imagemin'
+
+    // Images
+    'imagemin',
+
+    // Clean
+    'clean:sass'
   ]);
 
 };
