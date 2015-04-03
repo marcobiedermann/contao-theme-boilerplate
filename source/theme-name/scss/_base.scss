@@ -9,11 +9,6 @@
 
 }
 
-@include placeholder {
-  color: $color-border;
-  font-style: italic;
-}
-
 -moz-::selection,
 ::selection {
   background: $color;
@@ -27,13 +22,13 @@ template {
 }
 
 html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
   font-size: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: grayscale;
   height: 100%;
   text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -150,8 +145,8 @@ button,
 }
 
 button {
-  background-image: none;
   background-color: transparent;
+  background-image: none;
   border-radius: 0;
 }
 
@@ -177,6 +172,15 @@ textarea {
   margin: 0;
   outline-color: $color-primary;
   padding: 0;
+}
+
+input,
+textarea {
+
+  &::placeholder {
+    color: $color-border;
+  }
+
 }
 
 input {

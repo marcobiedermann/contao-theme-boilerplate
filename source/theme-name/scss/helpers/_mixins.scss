@@ -19,10 +19,3 @@
   margin: 0;
   padding: 0;
 }
-
-@mixin placeholder {
-  ::-webkit-input-placeholder {@content}
-  ::-moz-placeholder {@content}
-  :-moz-placeholder {@content}
-  :-ms-input-placeholder {@content}
-}
