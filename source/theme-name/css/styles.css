@@ -449,18 +449,15 @@ video {
   .formbody .checkbox_container:after,
   .formbody .radio_container:after {
     clear: both; }
-  .formbody .checkbox_container > span,
-  .formbody .radio_container > span {
-    float: left;
-    width: 100%; }
-    @media (min-width: 30rem) {
-      .formbody .checkbox_container > span,
-      .formbody .radio_container > span {
-        width: 50%; } }
-    @media (min-width: 40rem) {
-      .formbody .checkbox_container > span,
-      .formbody .radio_container > span {
-        width: 33.33333%; } }
+  @media (min-width: 30rem) {
+    .formbody .checkbox_container > span,
+    .formbody .radio_container > span {
+      float: left;
+      width: 50%; } }
+  @media (min-width: 40rem) {
+    .formbody .checkbox_container > span,
+    .formbody .radio_container > span {
+      width: 33.33333%; } }
   .formbody .checkbox_container label,
   .formbody .radio_container label {
     display: block;
@@ -470,12 +467,10 @@ video {
   float: left;
   height: 1rem;
   margin: .25rem .5rem 0 .25rem; }
-.formbody .captcha {
-  width: 100%; }
-  @media (min-width: 40rem) {
-    .formbody .captcha {
-      float: left;
-      width: 50%; } }
+@media (min-width: 40rem) {
+  .formbody .captcha {
+    float: left;
+    width: 50%; } }
 .formbody .captcha_text {
   padding: .25rem .5rem; }
 .formbody .submit_container {
@@ -703,8 +698,6 @@ video {
   @media (min-width: 60rem) {
     .ce_gallery .cols_12 li {
       width: 8.33333%; } }
-  .ce_gallery .image_container {
-    margin: 0; }
 
 .ce_hyperlink {
   margin-bottom: 2rem; }
@@ -717,8 +710,6 @@ video {
   .ce_list ol,
   .ce_list ul {
     margin-bottom: 0; }
-  .ce_list li {
-    margin-bottom: .5rem; }
 
 .ce_markdown {
   margin-bottom: 2rem; }

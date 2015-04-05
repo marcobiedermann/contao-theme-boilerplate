@@ -111,10 +111,9 @@
     position: relative;
 
     > span {
-      float: left;
-      width: (100% / 1);
 
       @media (min-width: $media-tiny) {
+        float: left;
         width: (100% / 2);
       }
 
@@ -155,7 +154,6 @@
   }
 
   .captcha {
-    width: (100% / 1);
 
     @media (min-width: $media-small) {
       float: left;
