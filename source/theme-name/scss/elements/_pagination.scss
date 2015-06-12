@@ -14,6 +14,7 @@
   a {
     color: $color;
 
+    &:focus,
     &:hover {
       color: $color-link;
     }
