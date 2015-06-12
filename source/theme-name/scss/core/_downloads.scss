@@ -3,12 +3,6 @@
   @include clear();
   margin-bottom: $margin-elements-bottom;
 
-  img {
-    float: left;
-    margin-right: .5rem;
-    margin-top: 3px;
-  }
-
   a {
     @include clear();
     background: url('#{$path-img}/icons/download.png') no-repeat 100% 50%;
@@ -18,7 +12,9 @@
   }
 
   .mime_icon {
-
+    float: left;
+    margin-right: .5rem;
+    margin-top: 3px;
   }
 
   .size {
