@@ -33,6 +33,3 @@ nbproject
 .sass-cache
 bower_components
 node_modules
-
-# Theme files
-files/theme-name

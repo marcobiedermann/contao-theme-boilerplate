@@ -1,0 +1,234 @@
+.formbody {
+
+  > table {
+    border-collapse: separate;
+    border-spacing: .5rem;
+    margin: -.5rem;
+  }
+
+  td {
+    vertical-align: top;
+  }
+
+  .widget {
+    @include clear();
+    margin-bottom: 1rem;
+  }
+
+  fieldset {
+
+  }
+
+  label {
+    display: block;
+
+    &.mandatory {
+
+    }
+
+  }
+
+  legend {
+
+  }
+
+  span {
+
+    &.mandatory {
+      color: $color-error;
+    }
+
+  }
+
+  p {
+
+    &.error {
+      color: $color-error;
+    }
+
+  }
+
+  .headline {
+
+  }
+
+  .explanation {
+
+  }
+
+  select,
+  textarea,
+  .captcha,
+  .text {
+    background-color: $color-input-bg;
+    border: 1px solid $color-border;
+    color: $color-input;
+    float: left;
+    height: $line-height + (.25em * 2); // fixes line-height issue in FF & on select tag
+    padding: .25rem .5rem;
+
+    &:hover {
+      border-color: $color-border-hover;
+    }
+
+  }
+
+  .text {
+
+    &.mandatory {
+
+    }
+
+  }
+
+  select {
+
+    &.mandatory {
+
+    }
+
+  }
+
+  textarea {
+
+    &.mandatory {
+
+    }
+
+  }
+
+  .upload {
+
+    &.mandatory {
+
+    }
+
+  }
+
+  .checkbox_container,
+  .radio_container {
+    @include clear();
+    position: relative;
+
+    > span {
+
+      @media (min-width: $media-tiny) {
+        float: left;
+        width: (100% / 2);
+      }
+
+      @media (min-width: $media-small) {
+        width: (100% / 3);
+      }
+
+    }
+
+    label {
+      display: block;
+      overflow: hidden;
+    }
+
+  }
+
+  .checkbox_container {
+
+  }
+
+  .radio_container {
+
+  }
+
+  .checkbox,
+  .radio {
+    float: left;
+    height: 1rem;
+    margin: .25rem .5rem 0 .25rem;
+  }
+
+  .checkbox {
+
+  }
+
+  .radio {
+
+  }
+
+  .captcha {
+
+    @media (min-width: $media-small) {
+      float: left;
+      width: (100% / 2);
+    }
+
+  }
+
+  .captcha_text {
+    padding: .25rem .5rem;
+  }
+
+  .submit_container {
+    @include clear();
+    margin: -.25rem;
+  }
+
+  .submit,
+  .reset {
+    background-color: $color-btn-bg;
+    border: 1px solid transparent;
+    color: $color-btn;
+    height: $line-height + (.25em * 2);
+    margin: .25rem;
+    padding: .25rem 2rem;
+
+    &:hover,
+    &:focus {
+      background-color: $color-btn-hover-bg;
+    }
+
+  }
+
+  .submit {
+    float: right;
+  }
+
+  .reset {
+    float: left;
+  }
+
+}
+
+.tableless,
+.tableform {
+
+  select,
+  textarea,
+  .text,
+  .upload {
+    width: 100%;
+  }
+
+}
+
+@if ($rtl) {
+
+  .formbody {
+
+    .checkbox_container,
+    .radio_container {
+
+      > span {
+        float: right;
+      }
+
+    }
+
+    .checkbox,
+    .radio {
+      float: right;
+      margin: .25em .25em 0 .5rem;
+    }
+
+  }
+
+}
+

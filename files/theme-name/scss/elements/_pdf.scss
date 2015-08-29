@@ -1,0 +1,24 @@
+.pdf_link {
+  @include clear();
+  float: right;
+  margin: 0 -.25rem;
+
+  a {
+    float: left;
+    padding: 0 .25rem;
+  }
+
+}
+
+@if ($rtl) {
+
+  .pdf_link {
+    float: left;
+
+    a {
+      float: right;
+    }
+
+  }
+
+}

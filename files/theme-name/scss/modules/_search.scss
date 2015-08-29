@@ -1,0 +1,82 @@
+.mod_search {
+
+  .formbody {
+    @include clear();
+  }
+
+  .text,
+  .submit {
+    float: left;
+  }
+
+  .text {
+    -webkit-appearance: textfield;
+    padding: .5rem;
+    width: 75%;
+  }
+
+  .submit {
+    padding-left: 0;
+    padding-right: 0;
+    width: 25%;
+  }
+
+  .header {
+
+  }
+
+  > div {
+
+    &.first {
+
+    }
+
+    &.last {
+
+    }
+
+    &.even {
+
+    }
+
+    &.odd {
+
+    }
+
+  }
+
+  .relevance {
+
+  }
+
+  .context {
+
+  }
+
+  .highlight {
+    color: $color-primary;
+    font-style: italic;
+  }
+
+  .url {
+
+  }
+
+  .filezize {
+
+  }
+
+}
+
+@if ($rtl) {
+
+  .mod_search {
+
+    .text,
+    .submit {
+      float: right;
+    }
+
+  }
+
+}

@@ -1,0 +1,34 @@
+.mod_quicknav {
+  margin-bottom: $margin-elements-bottom;
+
+  .formbody {
+    @include clear();
+  }
+
+  .select,
+  .submit {
+    float: left;
+  }
+
+  .select {
+    width: 75%;
+  }
+
+  .submit {
+    width: 25%;
+  }
+
+}
+
+@if ($rtl) {
+
+  .mod_quicknav {
+
+    .select,
+    .submit {
+      float: right;
+    }
+
+  }
+
+}

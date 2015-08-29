@@ -1,0 +1,52 @@
+.pagination {
+  @include clear();
+  margin-top: 1rem;
+
+  ul {
+    @include list-unstyled();
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 .5rem;
+  }
+
+  a {
+    color: $color;
+
+    &:focus,
+    &:hover {
+      color: $color-link;
+    }
+
+  }
+
+  .link {
+
+  }
+
+  .previous {
+
+  }
+
+  .next {
+
+  }
+
+  .current {
+    color: $color-link;
+  }
+
+  @media (min-width: $media-tiny) {
+
+    p {
+      float: right;
+    }
+
+    ul {
+      text-align: center;
+    }
+
+  }
+
+}

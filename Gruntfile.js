@@ -11,9 +11,7 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
     config: {
-      source: 'source/<%= pkg.name %>',
-      build: 'files/<%= pkg.name %>',
-      tmp: '.tmp'
+      files: 'files/<%= pkg.name %>'
     },
 
     autoprefixer: {
@@ -22,22 +20,17 @@ module.exports = function(grunt) {
       },
       files: {
         expand: true,
-        cwd: '<%= config.source %>/css',
-        dest: '<%= config.source %>/css',
+        cwd: '<%= config.files %>/css',
+        dest: '<%= config.files %>/css',
         src: '**/*.css'
       }
-    },
-
-    clean: {
-      dist: ['<%= config.build %>'],
-      sass: ['.sass-cache']
     },
 
     cmq: {
       files: {
         expand: true,
-        cwd: '<%= config.source %>/css',
-        dest: '<%= config.build %>/css',
+        cwd: '<%= config.files %>/css',
+        dest: '<%= config.files %>/css',
         src: '**/*.css'
       }
     },
@@ -48,32 +41,17 @@ module.exports = function(grunt) {
       },
       files: {
         src: [
-          '<%= config.source %>/js/script.js'
+          '<%= config.files %>/js/script.js'
         ],
-        dest: '<%= config.build %>/js/script.js',
+        dest: '<%= config.files %>/js/main.js',
       }
-    },
-
-    copy: {
-      favicons: {
-        expand: true,
-        cwd: '<%= config.source %>',
-        dest: '<%= config.build %>',
-        src: '*ico'
-      },
-      fonts: {
-        expand: true,
-        cwd: '<%= config.source %>/fonts',
-        dest: '<%= config.build %>/fonts',
-        src: '**/*.{otf,svg,ttf,woff,woff2}',
-      },
     },
 
     cssmin: {
       files: {
         expand: true,
-        cwd: '<%= config.build %>/css',
-        dest: '<%= config.build %>/css',
+        cwd: '<%= config.files %>/css',
+        dest: '<%= config.files %>/css',
         src: '**/*.css'
       }
     },
@@ -82,9 +60,9 @@ module.exports = function(grunt) {
       files: {
         files: [{
           expand: true,
-          cwd: '<%= config.source %>',
+          cwd: 'files',
           src: '**/*.{gif,jpeg,jpg,png}',
-          dest: '<%= config.build %>'
+          dest: 'files'
         }]
       }
     },
@@ -95,35 +73,32 @@ module.exports = function(grunt) {
       },
       files: [
         'gruntfile.js',
-        '<%= config.source %>/js/**/*.js',
-        '!<%= config.source %>/js/libs/**/*.js'
+        '<%= config.files %>/js/**/*.js',
+        '!<%= config.files %>/js/libs/**/*.js'
       ]
     },
 
     uglify: {
-      options: {
-        sourceMap: false
-      },
       files: {
-        expand: true,
-        cwd: '<%= config.build %>/js',
-        dest: '<%= config.build %>/js',
-        src: '**/*.js',
+        src: [
+          '<%= config.files %>/js/main.js'
+        ],
+        dest: '<%= config.files %>/js/main.js',
       }
     },
 
     sass: {
       files: {
         expand: true,
-        cwd: '<%= config.source %>/scss',
-        dest: '<%= config.source %>/css',
+        cwd: '<%= config.files %>/scss',
+        dest: '<%= config.files %>/css',
         src: '**/*.scss',
         ext: '.css'
       }
     },
 
     scsslint: {
-      files: ['<%= config.source %>/scss/**/*.scss']
+      files: ['<%= config.files %>/scss/**/*.scss']
     },
 
     watch: {
@@ -132,7 +107,7 @@ module.exports = function(grunt) {
       },
 
       css: {
-        files: ['<%= config.source %>/css/**/*.css'],
+        files: ['<%= config.files %>/css/**/*.css'],
         tasks: ['autoprefixer']
       },
 
@@ -142,17 +117,17 @@ module.exports = function(grunt) {
       },
 
       img: {
-        files: ['<%= config.source %>/img/**/*.{gif,jpeg,jpg,png}'],
+        files: ['<%= config.files %>/img/**/*.{gif,jpeg,jpg,png}'],
         tasks: []
       },
 
       js: {
-        files: ['<%= config.source %>/js/**/*.js'],
+        files: ['<%= config.files %>/js/**/*.js'],
         tasks: ['jshint']
       },
 
       sass: {
-        files: ['<%= config.source %>/scss/**/*.scss'],
+        files: ['<%= config.files %>/scss/**/*.scss'],
         tasks: ['scsslint', 'sass']
       },
 
@@ -189,12 +164,6 @@ module.exports = function(grunt) {
     'jshint',
     'scsslint',
 
-    // Clean
-    'clean:dist',
-
-    // Copy
-    'copy',
-
     // CSS
     'sass',
     'autoprefixer',
@@ -206,10 +175,7 @@ module.exports = function(grunt) {
     'uglify',
 
     // Images
-    'imagemin',
-
-    // Clean
-    'clean:sass'
+    'imagemin'
   ]);
 
 };
