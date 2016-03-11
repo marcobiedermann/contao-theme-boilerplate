@@ -1,7 +1,7 @@
 #Contao CMS Theme Template
 
 ##Compatible
-Compatible Version: [Contao 3.4.5](https://download.contao.org/3.4.5/zip)
+Compatible Version: [Contao 3.5.8](https://download.contao.org/3.5.8/zip)
 
 ##License
 
