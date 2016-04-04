@@ -72,7 +72,7 @@ audio:not([controls]) {
 a {
   background-color: transparent;
   border: 0;
-  color: $color-link;
+  color: $link-color;
   text-decoration: none;
   transition: background-color .3s, color .3s;
 
@@ -86,7 +86,7 @@ a {
 
   &:hover,
   &:focus {
-    color: $color-link-hover;
+    color: $link-hover-color;
   }
 
 }
@@ -102,7 +102,7 @@ strong {
 }
 
 blockquote {
-  border-left: 3px solid $color-border;
+  border-left: 3px solid $border-color;
   margin: 0;
   padding-left: 1rem;
 
@@ -139,7 +139,7 @@ button,
   cursor: pointer;
   font: $font-weight #{$font-size}/#{$line-height} $font-family, $font-family-fallback;
   margin: 0;
-  outline-color: $color-link;
+  outline-color: $link-color;
   overflow: visible;
   text-transform: none;
 }
@@ -179,7 +179,7 @@ input,
 textarea {
 
   &::placeholder {
-    color: $color-border;
+    color: $border-color;
   }
 
 }
@@ -248,7 +248,7 @@ object {
 }
 
 fieldset {
-  border: 1px solid $color-border;
+  border: 1px solid $border-color;
   margin: 0;
   padding: .5rem;
   position: relative;
@@ -284,7 +284,7 @@ footer {
 }
 
 hr {
-  background-color: $color-border;
+  background-color: $border-color;
   border: 0;
   box-sizing: content-box;
   height: 1px;

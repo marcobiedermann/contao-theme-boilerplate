@@ -1,5 +1,8 @@
+$header-bgcolor: $color-bg;
+$header-color: $color;
+
 #header {
-  background: $color-header-bg;
-  color: $color-header;
+  background: $header-bgcolor;
+  color: $header-color;
   padding: $margin-elements-bottom 0;
 }

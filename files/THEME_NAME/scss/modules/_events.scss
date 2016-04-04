@@ -58,7 +58,7 @@
   .layout_upcoming {
     @include clear();
 
-    border-bottom: 1px solid $color-border;
+    border-bottom: 1px solid $border-color;
     margin-bottom: 1rem;
     padding-bottom: .5rem;
 
@@ -95,7 +95,7 @@
   }
 
   .header {
-    background-color: $color-input-bg;
+    background-color: $input-bgcolor;
     float: left;
     font-size: .875rem;
     margin-right: 1rem;

@@ -17,7 +17,7 @@
 
     &:focus,
     &:hover {
-      color: $color-link;
+      color: $link-color;
     }
 
   }
@@ -35,7 +35,7 @@
   }
 
   .current {
-    color: $color-link;
+    color: $link-color;
   }
 
   @media (min-width: $media-tiny) {

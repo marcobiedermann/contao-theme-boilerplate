@@ -17,24 +17,12 @@ $color-information-hover: darken($color-information, 10%);
 $color-warning: #f1c40f;
 $color-warning-hover: darken($color-warning, 10%);
 
-$color-link: $color-primary;
-$color-link-hover: darken($color-link, 10%);
+$link-color: $color-primary;
+$link-hover-color: darken($link-color, 10%);
 
-$color-border: #c8c8c8;
-$color-border-hover: darken($color-border, 10%);
-
-// Layout
-$color-header: $color;
-$color-header-bg: $color-bg;
-
-$color-footer: $color;
-$color-footer-bg: $color-bg;
+$border-color: #c8c8c8;
+$border-hover-color: darken($border-color, 10%);
 
 // Elements
-$color-btn: $color-bg;
-$color-btn-bg: $color-primary;
-$color-btn-hover: inherit;
-$color-btn-hover-bg: darken($color-btn-bg, 10%);
-
-$color-input: $color;
-$color-input-bg: #f7f7f7;
+$input-bgcolor: #f7f7f7;
+$input-color: $color;

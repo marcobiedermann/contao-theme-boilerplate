@@ -1,3 +1,7 @@
+$grid-columns: 12;
+$grid-gutter: 2%;
+$grid-container: 78rem;
+
 .inside {
   @include clear();
 

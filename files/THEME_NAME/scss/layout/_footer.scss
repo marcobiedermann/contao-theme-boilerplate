@@ -1,5 +1,8 @@
+$footer-bgcolor: $color-bg;
+$footer-color: $color;
+
 #footer {
-  background: $color-footer-bg;
-  color: $color-footer;
+  background: $footer-bgcolor;
+  color: $footer-color;
   padding: $margin-elements-bottom 0;
 }
