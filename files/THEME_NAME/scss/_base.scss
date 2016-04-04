@@ -2,8 +2,8 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     box-sizing: border-box;
   }
 
@@ -109,7 +109,7 @@ blockquote {
   p {
     font-style: italic;
 
-    &:before {
+    &::before {
       content: '\201C';
     }
 
