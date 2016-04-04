@@ -28,3 +28,24 @@ Desktop.ini
 Thumb.db
 Thumbs.db
 nbproject
+
+# Contao Files and Folders
+.github
+.tx
+assets
+check
+contao
+files/tiny_templates
+files/tinymce.css
+share
+system
+templates/.htaccess
+templates/index.html
+vendor
+
+.htaccess.default
+build.xml
+composer.json
+composer.lock
+index.php
+robots.txt
