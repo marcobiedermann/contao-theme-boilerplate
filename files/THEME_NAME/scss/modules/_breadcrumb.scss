@@ -5,12 +5,12 @@
     @include clear();
     @include list-unstyled();
 
-    margin: 0 -.5rem;
+    margin: -.5rem;
   }
 
   li {
     float: left;
-    margin: 0 .5rem;
+    margin: .5rem;
   }
 
   a {

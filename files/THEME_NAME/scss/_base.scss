@@ -32,12 +32,14 @@ html {
 }
 
 body {
-  background: $color-bg;
+  background-color: $color-bg;
   color: $color;
-  font: $font-weight #{$font-size}/#{$line-height} $font-family, $font-family-fallback;
-  height: 100%;
+  font-family: $font-family, $font-family-fallback;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
   margin: 0;
-  position: relative;
+  min-height: 100%;
 }
 
 article,
@@ -65,8 +67,12 @@ video {
   vertical-align: baseline;
 }
 
-audio:not([controls]) {
-  display: none;
+audio {
+
+  :not([controls]) {
+    display: none;
+  }
+
 }
 
 a {
@@ -288,14 +294,15 @@ hr {
   border: 0;
   box-sizing: content-box;
   height: 1px;
-  margin: 0 0 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
 }
 
 img {
   border: 0;
-  display: block;
   height: auto;
   max-width: 100%;
+  vertical-align: middle;
 }
 
 label {
@@ -322,8 +329,9 @@ progress {
 
 ol,
 ul {
-  margin: 0 0 .5rem;
-  padding: 0 0 0 1.5rem;
+  margin-bottom: .5rem;
+  margin-top: 0;
+  padding-left: 1.5rem;
 
   ol,
   ul {
@@ -333,7 +341,8 @@ ul {
 }
 
 p {
-  margin: 0 0 .5rem;
+  margin-bottom: .5rem;
+  margin-top: 0;
 }
 
 pre {
@@ -362,20 +371,22 @@ sup {
 }
 
 sup {
-  top: -.5rem;
+  top: -.5em;
 }
 
 sub {
-  bottom: -.25rem;
+  bottom: -.25em;
 }
 
 svg {
   height: auto;
   max-width: 100%;
-}
+  vertical-align: middle;
 
-svg:not(:root) {
-  overflow: hidden;
+  &:not(:root) {
+    overflow: hidden;
+  }
+
 }
 
 table {

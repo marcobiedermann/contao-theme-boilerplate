@@ -2,26 +2,26 @@
 
   &.float_above,
   &.float_below {
-    margin: 0 0 1rem;
+    margin-bottom: 1rem;
   }
 
   @media (min-width: $media-tiny) {
 
     &.float_left,
     &.float_right {
-      margin: 0 0 1rem;
+      margin-bottom: 1rem;
       max-width: 50%;
       width: auto;
     }
 
     &.float_left {
       float: left;
-      margin: 0 1rem 1rem 0;
+      margin-right: 1rem;
     }
 
     &.float_right {
       float: right;
-      margin: 0 0 1rem 1rem;
+      margin-left: 1rem;
     }
 
   }

@@ -4,12 +4,13 @@
   ul {
     @include list-unstyled();
 
+    margin: -.5rem;
     text-align: center;
   }
 
   li {
     display: inline-block;
-    margin: 0 .5rem;
+    margin: .5rem;
   }
 
   a {
@@ -17,7 +18,7 @@
   }
 
   .prev {
-    margin-left: 0;
+
   }
 
   .next {
@@ -25,7 +26,7 @@
   }
 
   .up {
-    margin-right: 0;
+
   }
 
 }

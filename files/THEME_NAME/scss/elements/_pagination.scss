@@ -5,11 +5,13 @@
 
   ul {
     @include list-unstyled();
+
+    margin: -.5rem;
   }
 
   li {
     display: inline-block;
-    margin: 0 .5rem;
+    margin: .5rem;
   }
 
   a {
