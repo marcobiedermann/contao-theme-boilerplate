@@ -1,5 +1,6 @@
 .inside {
   @include clear();
+
   margin: 0 auto;
   max-width: $grid-container;
   width: 90%;
@@ -7,6 +8,7 @@
 
 .grid_row {
   @include clear();
+
   margin-left: $grid-gutter / -2;
   margin-right: $grid-gutter / -2;
 }

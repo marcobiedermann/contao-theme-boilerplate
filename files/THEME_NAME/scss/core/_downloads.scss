@@ -1,10 +1,12 @@
 .ce_download,
 .ce_downloads {
   @include clear();
+
   margin-bottom: $margin-elements-bottom;
 
   a {
     @include clear();
+
     background: url('#{$path-img}/icons/download.png') no-repeat 100% 50%;
     display: block;
     overflow: hidden;

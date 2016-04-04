@@ -57,6 +57,7 @@
   .layout_teaser,
   .layout_upcoming {
     @include clear();
+
     border-bottom: 1px solid $color-border;
     margin-bottom: 1rem;
     padding-bottom: .5rem;
