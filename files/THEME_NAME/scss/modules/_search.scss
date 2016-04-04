@@ -67,16 +67,3 @@
   }
 
 }
-
-@if ($rtl) {
-
-  .mod_search {
-
-    .text,
-    .submit {
-      float: right;
-    }
-
-  }
-
-}

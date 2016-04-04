@@ -19,16 +19,3 @@
   }
 
 }
-
-@if ($rtl) {
-
-  .mod_quicknav {
-
-    .select,
-    .submit {
-      float: right;
-    }
-
-  }
-
-}

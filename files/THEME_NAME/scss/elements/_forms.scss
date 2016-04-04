@@ -214,27 +214,3 @@ $btn-hover-color: inherit;
   }
 
 }
-
-@if ($rtl) {
-
-  .formbody {
-
-    .checkbox_container,
-    .radio_container {
-
-      > span {
-        float: right;
-      }
-
-    }
-
-    .checkbox,
-    .radio {
-      float: right;
-      margin: .25em .25em 0 .5rem;
-    }
-
-  }
-
-}
-
