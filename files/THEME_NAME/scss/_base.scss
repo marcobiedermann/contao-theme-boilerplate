@@ -1,12 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 * {
-  box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
-
-  &::before,
-  &::after {
-    box-sizing: border-box;
-  }
-
 }
 
 -moz-::selection,
@@ -22,6 +21,7 @@ template {
 }
 
 html {
+  box-sizing: border-box;
   font-size: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
