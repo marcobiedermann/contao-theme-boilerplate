@@ -5,15 +5,12 @@
 // @import 'fonts';
 
 // Mixins
-
 @import 'helpers/mixins';
 
 // Base
-
 @import 'base';
 
 // Layout
-
 @import 'layout/wrapper';
 @import 'layout/header';
 @import 'layout/main';
@@ -22,7 +19,6 @@
 @import 'layout/footer';
 
 // Elements
-
 @import 'elements/buttons';
 @import 'elements/enclosure';
 @import 'elements/forms';
@@ -31,7 +27,6 @@
 @import 'elements/pdf';
 
 // Core
-
 @import 'core/accordion';
 @import 'core/code';
 @import 'core/downloads';
@@ -50,7 +45,6 @@
 @import 'core/youtube';
 
 // Modules
-
 @import 'modules/article';
 @import 'modules/articleList';
 @import 'modules/booknav';
@@ -80,12 +74,10 @@
 // Extensions
 
 // Helpers
-
 @import 'helpers/animations';
 @import 'helpers/grid';
 @import 'helpers/icons';
 @import 'helpers/utilities';
 
 // Print
-
 @import 'print';
