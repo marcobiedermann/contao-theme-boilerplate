@@ -1,3 +1,24 @@
+$font-family-code: 'Courier New';
+$font-family-code-fallback: monospace;
+
+code,
+kdb,
+pre,
+samp {
+  font-family: $font-family-code, $font-family-code-fallback;
+  font-size: 1rem;
+}
+
+pre {
+  display: block;
+  margin: 0;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+
 .ce_code {
   margin-bottom: $margin-elements-bottom;
 }

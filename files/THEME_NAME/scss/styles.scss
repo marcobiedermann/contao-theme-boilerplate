@@ -1,28 +1,23 @@
 // Variables
-
 @import 'variables';
 @import 'colors';
-// @import 'fonts';
 
 // Mixins
 @import 'helpers/mixins';
 
-// Base
-@import 'base';
-
 // Layout
-@import 'layout/wrapper';
-@import 'layout/header';
-@import 'layout/main';
-@import 'layout/left';
-@import 'layout/right';
+@import 'layout/base';
 @import 'layout/footer';
+@import 'layout/header';
+@import 'layout/left';
+@import 'layout/main';
+@import 'layout/right';
+@import 'layout/sidebar';
+@import 'layout/wrapper';
 
 // Elements
-@import 'elements/buttons';
+@import 'elements/button';
 @import 'elements/enclosure';
-@import 'elements/forms';
-@import 'elements/image';
 @import 'elements/pagination';
 @import 'elements/pdf';
 

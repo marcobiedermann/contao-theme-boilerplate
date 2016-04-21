@@ -1,3 +1,26 @@
+a {
+  background-color: transparent;
+  border: 0;
+  color: $link-color;
+  text-decoration: none;
+  transition: background-color .3s, color .3s;
+
+  &:active,
+  &:focus,
+  &:hover,
+  &:visited {
+    border: 0;
+    outline: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+  }
+
+}
+
+
 .ce_hyperlink {
   margin-bottom: $margin-elements-bottom;
 

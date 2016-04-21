@@ -1,6 +1,12 @@
 $footer-bgcolor: $color-bg;
 $footer-color: $color;
 
+footer {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
 #footer {
   background-color: $footer-bgcolor;
   color: $footer-color;

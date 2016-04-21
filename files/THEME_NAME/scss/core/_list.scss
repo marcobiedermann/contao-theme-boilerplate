@@ -1,3 +1,26 @@
+dl {
+  margin: 0 0 .5rem;
+}
+
+dd {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+ol,
+ul {
+  margin-bottom: .5rem;
+  margin-top: 0;
+  padding-left: 1.5rem;
+
+  ol,
+  ul {
+    padding-left: 1.5rem;
+  }
+
+}
+
+
 .ce_list {
   margin-bottom: $margin-elements-bottom;
 

@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+-moz-::selection,
+::selection {
+  background: $color;
+  color: $color-bg;
+  text-shadow: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: grayscale;
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+}
+
+body {
+  background-color: $color-bg;
+  color: $color;
+  font-family: $font-family, $font-family-fallback;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  margin: 0;
+  min-height: 100%;
+}

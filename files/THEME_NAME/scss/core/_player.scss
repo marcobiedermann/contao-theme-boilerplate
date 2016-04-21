@@ -1,3 +1,21 @@
+audio {
+  display: inline-block;
+  vertical-align: baseline;
+
+  :not([controls]) {
+    display: none;
+  }
+
+}
+
+video {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: baseline;
+}
+
+
 .ce_player {
   // height: auto;
   margin-bottom: $margin-elements-bottom;

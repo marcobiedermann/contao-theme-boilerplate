@@ -1,3 +1,56 @@
+figure,
+figcaption, {
+  display: block;
+  margin: 0;
+}
+
+img,
+svg {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+svg {
+
+  &:not(:root) {
+    overflow: hidden;
+  }
+
+}
+
+.image_container {
+
+  &.float_above,
+  &.float_below {
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: $media-tiny) {
+
+    &.float_left,
+    &.float_right {
+      margin-bottom: 1rem;
+      max-width: 50%;
+      width: auto;
+    }
+
+    &.float_left {
+      float: left;
+      margin-right: 1rem;
+    }
+
+    &.float_right {
+      float: right;
+      margin-left: 1rem;
+    }
+
+  }
+
+}
+
+
 .ce_image {
   margin-bottom: $margin-elements-bottom;
 }

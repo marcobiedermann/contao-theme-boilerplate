@@ -1,6 +1,11 @@
 $header-bgcolor: $color-bg;
 $header-color: $color;
 
+header {
+  display: block;
+  margin: 0;
+}
+
 #header {
   background-color: $header-bgcolor;
   color: $header-color;

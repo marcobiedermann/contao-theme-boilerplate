@@ -1,3 +1,347 @@
+$btn-bgcolor: $color-primary;
+$btn-color: $color-bg;
+$btn-hover-bgcolor: darken($btn-bgcolor, 10%);
+$btn-hover-color: inherit;
+
+input,
+select,
+textarea {
+  background-image: none;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  font: $font-weight #{$font-size}/#{$line-height} $font-family, $font-family-fallback;
+  margin: 0;
+  outline-color: $color-primary;
+  padding: 0;
+}
+
+input,
+textarea {
+
+  &::placeholder {
+    color: $border-color;
+  }
+
+}
+
+input {
+  box-shadow: none;
+  transition: background-color .3s, color .3s;
+  vertical-align: middle;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+label {
+  color: inherit;
+  display: inline-block;
+  font: inherit;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+  width: auto;
+}
+
+legend {
+  border: 0;
+  display: block;
+  padding: 0 .25rem;
+  position: relative;
+}
+
+
+optgroup {
+  color: inherit;
+  font: inherit;
+  font-weight: bold;
+  margin: 0;
+}
+
+button,
+.reset,
+.submit {
+  -webkit-appearance: button;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: $font-weight #{$font-size}/#{$line-height} $font-family, $font-family-fallback;
+  margin: 0;
+  outline-color: $link-color;
+  overflow: visible;
+  text-transform: none;
+}
+
+button {
+  background-color: transparent;
+  background-image: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+.captcha,
+.text,
+textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.upload {
+  border-radius: 0;
+}
+
+.radio {
+  border-radius: 50%;
+}
+
+fieldset {
+  border: 1px solid $border-color;
+  margin: 0;
+  padding: .5rem;
+  position: relative;
+}
+
+select {
+  text-transform: none;
+}
+
+textarea {
+  -webkit-appearance: none;
+  height: auto;
+  max-width: 100%;
+  min-height: 10rem;
+  overflow: auto;
+  resize: none;
+  vertical-align: top;
+}
+
+.formbody {
+
+  > table {
+    border-collapse: separate;
+    border-spacing: .5rem;
+    margin: -.5rem;
+  }
+
+  td {
+    vertical-align: top;
+  }
+
+  .widget {
+    @include clear();
+
+    margin-bottom: 1rem;
+  }
+
+  fieldset {
+
+  }
+
+  label {
+    display: block;
+
+    &.mandatory {
+
+    }
+
+  }
+
+  legend {
+
+  }
+
+  span {
+
+    &.mandatory {
+      color: $color-error;
+    }
+
+  }
+
+  p {
+
+    &.error {
+      color: $color-error;
+    }
+
+  }
+
+  .headline {
+
+  }
+
+  .explanation {
+
+  }
+
+  select,
+  textarea,
+  .captcha,
+  .text {
+    background-color: $input-bgcolor;
+    border: 1px solid $border-color;
+    color: $input-color;
+    float: left;
+    height: $line-height + (.25em * 2); // fixes line-height issue in FF & on select tag
+    padding: .25rem .5rem;
+
+    &:hover {
+      border-color: $border-hover-color;
+    }
+
+  }
+
+  .text {
+
+    &.mandatory {
+
+    }
+
+  }
+
+  select {
+
+    &.mandatory {
+
+    }
+
+  }
+
+  textarea {
+
+    &.mandatory {
+
+    }
+
+  }
+
+  .upload {
+
+    &.mandatory {
+
+    }
+
+  }
+
+  .checkbox_container,
+  .radio_container {
+    @include clear();
+    position: relative;
+
+    > span {
+
+      @media (min-width: $media-tiny) {
+        float: left;
+        width: (100% / 2);
+      }
+
+      @media (min-width: $media-small) {
+        width: (100% / 3);
+      }
+
+    }
+
+    label {
+      display: block;
+      overflow: hidden;
+    }
+
+  }
+
+  .checkbox_container {
+
+  }
+
+  .radio_container {
+
+  }
+
+  .checkbox,
+  .radio {
+    float: left;
+    height: 1rem;
+    margin: .25rem .5rem 0 .25rem;
+  }
+
+  .checkbox {
+
+  }
+
+  .radio {
+
+  }
+
+  .captcha {
+
+    @media (min-width: $media-small) {
+      float: left;
+      width: (100% / 2);
+    }
+
+  }
+
+  .captcha_text {
+    padding: .25rem .5rem;
+  }
+
+  .submit_container {
+    @include clear();
+    margin: -.25rem;
+  }
+
+  .submit,
+  .reset {
+    background-color: $btn-bgcolor;
+    border: 1px solid transparent;
+    color: $btn-color;
+    height: $line-height + (.25em * 2);
+    margin: .25rem;
+    padding: .25rem 2rem;
+
+    &:hover,
+    &:focus {
+      background-color: $btn-hover-bgcolor;
+    }
+
+  }
+
+  .submit {
+    float: right;
+  }
+
+  .reset {
+    float: left;
+  }
+
+}
+
+.tableless,
+.tableform {
+
+  select,
+  textarea,
+  .text,
+  .upload {
+    width: 100%;
+  }
+
+}
+
+
 .ce_form {
   margin-bottom: $margin-elements-bottom;
 }
