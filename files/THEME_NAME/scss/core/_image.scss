@@ -27,7 +27,7 @@ svg {
     margin-bottom: 1rem;
   }
 
-  @media (min-width: $media-tiny) {
+  @media (min-width: $media-xs) {
 
     &.float_left,
     &.float_right {
@@ -50,7 +50,6 @@ svg {
 
 }
 
-
 .ce_image {
-  margin-bottom: $margin-elements-bottom;
+
 }

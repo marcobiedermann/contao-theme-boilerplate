@@ -1,7 +1,10 @@
+$main-padding-vertical: 3rem;
+
 main {
   display: block;
 }
 
 #main {
-  padding-top: $margin-elements-bottom;
+  padding-bottom: $main-padding-vertical;
+  padding-top: $main-padding-vertical;
 }

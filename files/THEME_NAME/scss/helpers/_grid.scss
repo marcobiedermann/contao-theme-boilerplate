@@ -23,7 +23,7 @@ $grid-width: 90%;
   min-height: 1px;
 }
 
-@media (min-width: $media-small) {
+@media (min-width: $media-sm) {
 
   .grid_col {
     float: left;

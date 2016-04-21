@@ -51,7 +51,7 @@
     .image_container {
       margin-bottom: 1rem;
 
-      @media (min-width: $media-tiny) {
+      @media (min-width: $media-xs) {
         margin: 0;
         max-width: 10rem;
         width: auto;

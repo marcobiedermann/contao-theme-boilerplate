@@ -29,7 +29,7 @@ blockquote {
 }
 
 p {
-  margin-bottom: .5rem;
+  margin-bottom: 1.5rem;
   margin-top: 0;
 }
 
@@ -60,8 +60,6 @@ sub {
 
 .ce_text {
   @include clear();
-
-  margin-bottom: $margin-elements-bottom - 1.5rem;
 
   blockquote,
   dl,
@@ -106,7 +104,7 @@ sub {
     vertical-align: top;
   }
 
-  @media (min-width: $media-tiny) {
+  @media (min-width: $media-xs) {
 
     p {
 

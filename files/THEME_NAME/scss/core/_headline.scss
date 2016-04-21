@@ -1,38 +1,116 @@
-$font-family-headings: inherit;
-$font-size-h1: 2.5rem;
-$font-size-h2: 2rem;
-$font-size-h3: 1.5rem;
-$font-size-h4: 1rem;
-$font-size-h5: .75rem;
-$font-size-h6: .5rem;
-$font-weight-headings: 700;
+$h1-color: inherit;
+$h1-font-family-fallback: inherit;
+$h1-font-family: inherit;
+$h1-font-size: 2.5rem;
+$h1-font-weight: 700;
+$h1-line-height: 1.2;
+$h1-margin-bottom: .5rem;
+$h1-margin-top: 0;
 
-$font-size-headings: (
-  $font-size-h1,
-  $font-size-h2,
-  $font-size-h3,
-  $font-size-h4,
-  $font-size-h5,
-  $font-size-h6
-);
+$h2-color: inherit;
+$h2-font-family-fallback: inherit;
+$h2-font-family: inherit;
+$h2-font-size: 2rem;
+$h2-font-weight: 700;
+$h2-line-height: 1.2;
+$h2-margin-bottom: .5rem;
+$h2-margin-top: 0;
 
-%headings {
-  color: inherit;
-  font-family: $font-family-headings, $font-family-fallback;
-  font-weight: $font-weight-headings;
+$h3-color: inherit;
+$h3-font-family-fallback: inherit;
+$h3-font-family: inherit;
+$h3-font-size: 1.5rem;
+$h3-font-weight: 700;
+$h3-line-height: 1.2;
+$h3-margin-bottom: .5rem;
+$h3-margin-top: 0;
+
+$h4-color: inherit;
+$h4-font-family-fallback: inherit;
+$h4-font-family: inherit;
+$h4-font-size: 1.25rem;
+$h4-font-weight: 700;
+$h4-line-height: 1.2;
+$h4-margin-bottom: .5rem;
+$h4-margin-top: 0;
+
+$h5-color: inherit;
+$h5-font-family-fallback: inherit;
+$h5-font-family: inherit;
+$h5-font-size: 1.125rem;
+$h5-font-weight: 700;
+$h5-line-height: 1.2;
+$h5-margin-bottom: .5rem;
+$h5-margin-top: 0;
+
+$h6-color: inherit;
+$h6-font-family-fallback: inherit;
+$h6-font-family: inherit;
+$h6-font-size: 1rem;
+$h6-font-weight: 700;
+$h6-line-height: 1.2;
+$h6-margin-bottom: .5rem;
+$h6-margin-top: 0;
+
+h1 {
+  color: $h1-color;
+  font-family: $h1-font-family, $h1-font-family-fallback;
+  font-size: $h1-font-size;
+  font-weight: $h1-font-weight;
+  line-height: $h1-line-height;
+  margin-bottom: $h1-margin-bottom;
+  margin-top: $h1-margin-top;
 }
 
-@for $i from 1 through length($font-size-headings) {
-
-  h#{$i} {
-    @extend %headings;
-    font-size: nth($font-size-headings, $i);
-    line-height: 1.5em;
-    margin: 0 0 .5rem;
-  }
-
+h2 {
+  color: $h2-color;
+  font-family: $h2-font-family, $h2-font-family-fallback;
+  font-size: $h2-font-size;
+  font-weight: $h2-font-weight;
+  line-height: $h2-line-height;
+  margin-bottom: $h2-margin-bottom;
+  margin-top: $h2-margin-top;
 }
 
+h3 {
+  color: $h3-color;
+  font-family: $h3-font-family, $h3-font-family-fallback;
+  font-size: $h3-font-size;
+  font-weight: $h3-font-weight;
+  line-height: $h3-line-height;
+  margin-bottom: $h3-margin-bottom;
+  margin-top: $h3-margin-top;
+}
+
+h4 {
+  color: $h4-color;
+  font-family: $h4-font-family, $h4-font-family-fallback;
+  font-size: $h4-font-size;
+  font-weight: $h4-font-weight;
+  line-height: $h4-line-height;
+  margin-bottom: $h4-margin-bottom;
+  margin-top: $h4-margin-top;
+}
+
+h5 {
+  color: $h5-color;
+  font-family: $h5-font-family, $h5-font-family-fallback;
+  font-size: $h5-font-size;
+  font-weight: $h5-font-weight;
+  line-height: $h5-line-height;
+  margin-bottom: $h5-margin-bottom;
+  margin-top: $h5-margin-top;
+}
+
+h6 {
+  color: $h6-color;
+  font-family: $h6-font-family, $h6-font-family-fallback;
+  font-size: $h6-font-size;
+  font-weight: $h6-font-weight;
+  line-height: $h6-line-height;
+  margin-bottom: $h6-margin-bottom;
+  margin-top: $h6-margin-top;
+}
 
 .ce_headline {
 

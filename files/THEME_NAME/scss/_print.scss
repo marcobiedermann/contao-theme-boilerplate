@@ -3,7 +3,7 @@
   * {
     background: transparent;
     box-shadow: none;
-    color: $color;
+    color: $base-color;
     text-shadow: none;
   }
 
@@ -37,7 +37,7 @@
   }
 
   select {
-    background: $color-bg;
+    background: $base-bg-color;
   }
 
   .inside {

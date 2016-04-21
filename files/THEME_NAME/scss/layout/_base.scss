@@ -1,3 +1,13 @@
+$html-font-size: 100%;
+
+$body-bg-color: $base-bg-color;
+$body-color: $base-color;
+$body-font-family: $base-font-family;
+$body-font-family-fallback: $base-font-family-fallback;
+$body-font-size: $base-font-size;
+$body-font-weight: $base-font-weight;
+$body-line-height: $base-line-height;
+
 *,
 *::before,
 *::after {
@@ -10,14 +20,14 @@
 
 -moz-::selection,
 ::selection {
-  background: $color;
-  color: $color-bg;
+  background: $body-color;
+  color: $body-bg-color;
   text-shadow: none;
 }
 
 html {
   box-sizing: border-box;
-  font-size: 100%;
+  font-size: $html-font-size;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: grayscale;
@@ -27,12 +37,12 @@ html {
 }
 
 body {
-  background-color: $color-bg;
-  color: $color;
-  font-family: $font-family, $font-family-fallback;
-  font-size: $font-size;
-  font-weight: $font-weight;
-  line-height: $line-height;
+  background-color: $body-bg-color;
+  color: $body-color;
+  font-family: $body-font-family, $body-font-family-fallback;
+  font-size: $body-font-size;
+  font-weight: $body-font-weight;
+  line-height: $body-line-height;
   margin: 0;
   min-height: 100%;
 }

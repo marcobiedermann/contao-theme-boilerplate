@@ -7,7 +7,6 @@
 }
 
 .mod_eventmenu {
-  margin-bottom: $margin-elements-bottom;
 
   ul {
     @include list-unstyled();
@@ -49,7 +48,6 @@
 
 .mod_eventlist,
 .mod_eventreader {
-  margin-bottom: $margin-elements-bottom;
   position: relative;
 
   .layout_full,
@@ -64,7 +62,6 @@
 
     &:last-of-type {
       border-bottom: 0;
-      margin-bottom: $margin-elements-bottom;
       padding-bottom: 0;
     }
 
@@ -95,7 +92,7 @@
   }
 
   .header {
-    background-color: $input-bgcolor;
+    background-color: #777;
     float: left;
     font-size: .875rem;
     margin-right: 1rem;

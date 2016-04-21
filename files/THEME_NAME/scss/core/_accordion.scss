@@ -1,12 +1,14 @@
+$accordion-toggle-bg-color: #777;
+
 .ce_accordion {
   margin-bottom: .25rem !important;
 
   &.last {
-    margin-bottom: $margin-elements-bottom !important;
+    margin-bottom: $base-line-height !important;
   }
 
   .toggler {
-    background-color: $input-bgcolor;
+    background-color: $accordion-toggle-bg-color;
     cursor: pointer;
     font-weight: bold;
     outline: 0;

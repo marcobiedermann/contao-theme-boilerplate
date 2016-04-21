@@ -2,12 +2,14 @@
 .ce_downloads {
   @include clear();
 
-  margin-bottom: $margin-elements-bottom;
+  margin-bottom: $base-line-height;
 
   a {
     @include clear();
 
-    background: url('#{$path-img}/icons/download.png') no-repeat 100% 50%;
+    background-image: url('#{$path-img}/icons/download.png');
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
     display: block;
     overflow: hidden;
     padding-right: 1.5rem;

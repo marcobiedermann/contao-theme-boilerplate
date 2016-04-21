@@ -1,5 +1,5 @@
 .ce_gallery {
-  margin-bottom: $margin-elements-bottom;
+  margin-bottom: 1.5rem;
 
   > ul {
     @include clear();
@@ -27,7 +27,7 @@
 
     li {
 
-      @media (min-width: $media-tiny) {
+      @media (min-width: $media-xs) {
         width: (100% / 3);
       }
 
@@ -39,11 +39,11 @@
 
     li {
 
-      @media (min-width: $media-tiny) {
+      @media (min-width: $media-xs) {
         width: (100% / 3);
       }
 
-      @media (min-width: $media-small) {
+      @media (min-width: $media-sm) {
         width: (100% / 4);
       }
 
@@ -55,7 +55,7 @@
 
     li {
 
-      @media (min-width: $media-tiny) {
+      @media (min-width: $media-xs) {
         width: (100% / 5);
       }
 
@@ -67,11 +67,11 @@
 
     li {
 
-      @media (min-width: $media-tiny) {
+      @media (min-width: $media-xs) {
         width: (100% / 3);
       }
 
-      @media (min-width: $media-small) {
+      @media (min-width: $media-sm) {
         width: (100% / 6);
       }
 
@@ -83,11 +83,11 @@
 
     li {
 
-      @media (min-width: $media-tiny) {
+      @media (min-width: $media-xs) {
         width: (100% / 3);
       }
 
-      @media (min-width: $media-small) {
+      @media (min-width: $media-sm) {
         width: (100% / 7);
       }
 
@@ -99,11 +99,11 @@
 
     li {
 
-      @media (min-width: $media-tiny) {
+      @media (min-width: $media-xs) {
         width: (100% / 4);
       }
 
-      @media (min-width: $media-small) {
+      @media (min-width: $media-sm) {
         width: (100% / 8);
       }
 
@@ -115,11 +115,11 @@
 
     li {
 
-      @media (min-width: $media-tiny) {
+      @media (min-width: $media-xs) {
         width: (100% / 4);
       }
 
-      @media (min-width: $media-small) {
+      @media (min-width: $media-sm) {
         width: (100% / 9);
       }
 
@@ -131,11 +131,11 @@
 
     li {
 
-      @media (min-width: $media-tiny) {
+      @media (min-width: $media-xs) {
         width: (100% / 5);
       }
 
-      @media (min-width: $media-small) {
+      @media (min-width: $media-sm) {
         width: (100% / 10);
       }
 
@@ -147,11 +147,11 @@
 
     li {
 
-      @media (min-width: $media-tiny) {
+      @media (min-width: $media-xs) {
         width: (100% / 4);
       }
 
-      @media (min-width: $media-small) {
+      @media (min-width: $media-sm) {
         width: (100% / 11);
       }
 
@@ -163,15 +163,15 @@
 
     li {
 
-      @media (min-width: $media-tiny) {
+      @media (min-width: $media-xs) {
         width: (100% / 4);
       }
 
-      @media (min-width: $media-small) {
+      @media (min-width: $media-sm) {
         width: (100% / 6);
       }
 
-      @media (min-width: $media-medium) {
+      @media (min-width: $media-md) {
         width: (100% / 12);
       }
 

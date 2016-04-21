@@ -1,6 +1,7 @@
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  margin-bottom: 1.5rem;
   text-align: left;
   width: 100%;
 }
@@ -14,7 +15,6 @@ th {
 
 
 .ce_table {
-  margin-bottom: $margin-elements-bottom;
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
 
@@ -101,7 +101,7 @@ th {
 
   }
 
-  @media (min-width: $media-small) {
+  @media (min-width: $media-sm) {
     -webkit-overflow-scrolling: none;
     overflow-x: none;
   }

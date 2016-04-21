@@ -1,5 +1,7 @@
-$footer-bgcolor: $color-bg;
-$footer-color: $color;
+$footer-bg-color: #222;
+$footer-color: #999;
+$footer-font-size: .875rem;
+$footer-padding-vertical: 1rem;
 
 footer {
   display: block;
@@ -8,7 +10,9 @@ footer {
 }
 
 #footer {
-  background-color: $footer-bgcolor;
+  background-color: $footer-bg-color;
   color: $footer-color;
-  padding: $margin-elements-bottom 0;
+  font-size: $footer-font-size;
+  padding-bottom: $footer-padding-vertical;
+  padding-top: $footer-padding-vertical;
 }

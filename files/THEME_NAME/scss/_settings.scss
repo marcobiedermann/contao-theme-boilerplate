@@ -1,7 +1,23 @@
-// Base
-$color: #282828;
-$color-bg: #fff;
+// Base Sizes
+$base-bg-color: #fff;
+$base-color: #222;
+$base-font-family: 'Helvetica Neue';
+$base-font-family-fallback: sans-serif;
+$base-font-size: 1rem;
+$base-font-weight: 400;
+$base-line-height: 1.5;
 
+// Media Queries
+$media-xs: 30em;
+$media-sm: 40em;
+$media-md: 60em;
+$media-lg: 78em;
+
+// Paths
+$path-fonts: '/files/theme-name/fonts';
+$path-img: '/files/theme-name/img';
+
+// Colors
 $color-primary: #3498db;
 $color-primary-hover: darken($color-primary, 10%);
 
@@ -17,12 +33,5 @@ $color-information-hover: darken($color-information, 10%);
 $color-warning: #f1c40f;
 $color-warning-hover: darken($color-warning, 10%);
 
-$link-color: $color-primary;
-$link-hover-color: darken($link-color, 10%);
-
 $border-color: #c8c8c8;
 $border-hover-color: darken($border-color, 10%);
-
-// Elements
-$input-bgcolor: #f7f7f7;
-$input-color: $color;

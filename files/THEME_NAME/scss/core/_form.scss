@@ -1,7 +1,15 @@
-$btn-bgcolor: $color-primary;
-$btn-color: $color-bg;
-$btn-hover-bgcolor: darken($btn-bgcolor, 10%);
+$btn-bg-color: $color-primary;
+$btn-color: $base-bg-color;
+
+$btn-hover-bg-color: darken($btn-bg-color, 10%);
 $btn-hover-color: inherit;
+
+$input-bg-color: #f7f7f7;
+$input-color: inherit;
+
+::placeholder {
+  color: $border-color;
+}
 
 input,
 select,
@@ -10,19 +18,10 @@ textarea {
   border: 0;
   border-radius: 0;
   color: inherit;
-  font: $font-weight #{$font-size}/#{$line-height} $font-family, $font-family-fallback;
+  font: inherit;
   margin: 0;
   outline-color: $color-primary;
   padding: 0;
-}
-
-input,
-textarea {
-
-  &::placeholder {
-    color: $border-color;
-  }
-
 }
 
 input {
@@ -53,26 +52,11 @@ legend {
   position: relative;
 }
 
-
 optgroup {
   color: inherit;
   font: inherit;
   font-weight: bold;
   margin: 0;
-}
-
-button,
-.reset,
-.submit {
-  -webkit-appearance: button;
-  border: 0;
-  color: inherit;
-  cursor: pointer;
-  font: $font-weight #{$font-size}/#{$line-height} $font-family, $font-family-fallback;
-  margin: 0;
-  outline-color: $link-color;
-  overflow: visible;
-  text-transform: none;
 }
 
 button {
@@ -93,19 +77,17 @@ input[disabled] {
   cursor: default;
 }
 
-.captcha,
-.text,
-textarea {
-  -webkit-appearance: none;
-  border-radius: 0;
-}
-
-.upload {
-  border-radius: 0;
-}
-
-.radio {
-  border-radius: 50%;
+button,
+.reset,
+.submit {
+  -webkit-appearance: button;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
 }
 
 fieldset {
@@ -127,6 +109,21 @@ textarea {
   overflow: auto;
   resize: none;
   vertical-align: top;
+}
+
+.captcha,
+.text,
+textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.upload {
+  border-radius: 0;
+}
+
+.radio {
+  border-radius: 50%;
 }
 
 .formbody {
@@ -192,11 +189,11 @@ textarea {
   textarea,
   .captcha,
   .text {
-    background-color: $input-bgcolor;
+    background-color: $input-bg-color;
     border: 1px solid $border-color;
     color: $input-color;
     float: left;
-    height: $line-height + (.25em * 2); // fixes line-height issue in FF & on select tag
+    height: $base-line-height + (.25em * 2); // fixes line-height issue in FF & on select tag
     padding: .25rem .5rem;
 
     &:hover {
@@ -244,12 +241,12 @@ textarea {
 
     > span {
 
-      @media (min-width: $media-tiny) {
+      @media (min-width: $media-xs) {
         float: left;
         width: (100% / 2);
       }
 
-      @media (min-width: $media-small) {
+      @media (min-width: $media-sm) {
         width: (100% / 3);
       }
 
@@ -287,7 +284,7 @@ textarea {
 
   .captcha {
 
-    @media (min-width: $media-small) {
+    @media (min-width: $media-sm) {
       float: left;
       width: (100% / 2);
     }
@@ -305,16 +302,16 @@ textarea {
 
   .submit,
   .reset {
-    background-color: $btn-bgcolor;
+    background-color: $btn-bg-color;
     border: 1px solid transparent;
     color: $btn-color;
-    height: $line-height + (.25em * 2);
+    height: $base-line-height + (.25em * 2);
     margin: .25rem;
     padding: .25rem 2rem;
 
     &:hover,
     &:focus {
-      background-color: $btn-hover-bgcolor;
+      background-color: $btn-hover-bg-color;
     }
 
   }
@@ -343,5 +340,5 @@ textarea {
 
 
 .ce_form {
-  margin-bottom: $margin-elements-bottom;
+
 }
