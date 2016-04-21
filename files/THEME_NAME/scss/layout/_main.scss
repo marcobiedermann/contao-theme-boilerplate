@@ -5,6 +5,7 @@ main {
 }
 
 #main {
+  flex-grow: 1;
   padding-bottom: $main-padding-vertical;
   padding-top: $main-padding-vertical;
 }

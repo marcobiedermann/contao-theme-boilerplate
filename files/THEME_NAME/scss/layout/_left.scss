@@ -1,3 +1,7 @@
 #left {
 
+  @media (min-width: $media-sm) {
+    order: -1;
+  }
+
 }
