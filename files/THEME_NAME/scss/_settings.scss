@@ -1,9 +1,9 @@
 // Base Sizes
 $base-bg-color: #fff;
-$base-color: #222;
-$base-font-family: 'Helvetica Neue';
+$base-color: #5e5e5e;
+$base-font-family: 'Source Sans Pro';
 $base-font-family-fallback: sans-serif;
-$base-font-size: 1rem;
+$base-font-size: .9375rem;
 $base-font-weight: 400;
 $base-line-height: 1.5;
 
@@ -24,7 +24,7 @@ $path-fonts: '/files/THEME_NAME/fonts';
 $path-img: '/files/THEME_NAME/img';
 
 // Colors
-$color-primary: #3498db;
+$color-primary: #c3bf8f;
 $color-primary-hover: darken($color-primary, 10%);
 
 $color-confirmation: #27ae60;
