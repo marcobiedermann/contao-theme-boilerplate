@@ -1,38 +1,25 @@
-.mod_comments {
-
-  .comment_default {
-
-    &.first {
-
-    }
-
-    &.last {
-
-    }
-
-    &.even {
-
-    }
-
-    &.odd {
-
-    }
-
-  }
+.ce_comments {
 
   .info {
-
-    a {
-
-    }
-
+    margin-bottom: .5rem;
   }
 
-  .time {
+  .reply {
+    margin-top: .5rem;
+    margin-left: 1.5rem;
+  }
 
+  .comment_default {
+    margin-bottom: 1.5rem;
   }
 
   .comment {
+    border-left: .125rem solid #222;
+    padding-left: 1rem;
+
+    :last-child {
+      margin-bottom: 0;
+    }
 
   }
 
