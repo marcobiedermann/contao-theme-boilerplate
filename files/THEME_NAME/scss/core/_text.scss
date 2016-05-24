@@ -3,14 +3,21 @@ dfn {
   font-style: italic;
 }
 
+address {
+  font-style: normal;
+}
+
 b,
 strong {
   font-weight: bold;
 }
 
 blockquote {
-  border-left: 3px solid $border-color;
-  margin: 0;
+  border-left: .125rem solid $border-color;
+  margin-bottom: 1.5rem;
+  margin-right: 0;
+  margin-top: 0;
+  margin-left: 0;
   padding-left: 1rem;
 
   p {
@@ -24,6 +31,11 @@ blockquote {
 
   cite {
 
+    &::before {
+      content: '–';
+      margin-right: .25rem;
+    }
+
   }
 
 }
@@ -31,6 +43,7 @@ blockquote {
 p {
   margin-bottom: 1.5rem;
   margin-top: 0;
+  max-width: 48em;
 }
 
 q {
@@ -61,14 +74,9 @@ sub {
 .ce_text {
   @include clear();
 
-  blockquote,
   dl,
   hr,
-  p,
-  pre,
-  ol,
-  ul,
-  table {
+  pre {
     margin-bottom: 1.5rem;
   }
 
