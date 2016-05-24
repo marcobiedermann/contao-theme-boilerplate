@@ -195,6 +195,7 @@ textarea {
     float: left;
     height: $base-line-height + (.25em * 2); // fixes line-height issue in FF & on select tag
     padding: .25rem .5rem;
+    width: 100%;
 
     &:hover {
       border-color: $border-hover-color;
@@ -236,21 +237,21 @@ textarea {
 
   .checkbox_container,
   .radio_container {
-    @include clear();
-    position: relative;
+    // @include clear();
+    // position: relative;
 
-    > span {
+    // > span {
 
-      @media (min-width: $media-xs) {
-        float: left;
-        width: (100% / 2);
-      }
+    //   @media (min-width: $media-xs) {
+    //     float: left;
+    //     width: (100% / 2);
+    //   }
 
-      @media (min-width: $media-sm) {
-        width: (100% / 3);
-      }
+    //   @media (min-width: $media-sm) {
+    //     width: (100% / 3);
+    //   }
 
-    }
+    // }
 
     label {
       display: block;
@@ -284,20 +285,14 @@ textarea {
 
   .captcha {
 
-    @media (min-width: $media-sm) {
-      float: left;
-      width: (100% / 2);
-    }
-
   }
 
   .captcha_text {
-    padding: .25rem .5rem;
+
   }
 
   .submit_container {
     @include clear();
-    margin: -.25rem;
   }
 
   .submit,
@@ -306,8 +301,7 @@ textarea {
     border: 1px solid transparent;
     color: $btn-color;
     height: $base-line-height + (.25em * 2);
-    margin: .25rem;
-    padding: .25rem 2rem;
+    padding: .25rem .5rem;
 
     &:hover,
     &:focus {
