@@ -1,15 +1,23 @@
 .mod_breadcrumb {
 
   ul {
-    @include clear();
-    @include list-unstyled();
-
-    margin: -.5rem;
+    list-style: none;
+    margin: -.25rem;
+    padding: 0;
   }
 
   li {
-    float: left;
-    margin: .5rem;
+    background-image: url('#{$path-img}/icons/breadcrumb.png');
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: .25rem;
+    padding-right: 1rem;
+  }
+
+  .last {
+    background-image: none;
+    padding-right: 0;
   }
 
   a {
