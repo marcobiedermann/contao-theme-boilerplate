@@ -1,3 +1,16 @@
+.mod_subscribe,
+.mod_unsubscribe {
+
+  .formbody {
+    display: flex;
+  }
+
+  .text {
+    flex-grow: 1;
+  }
+
+}
+
 .mod_subscribe {
 
 }
