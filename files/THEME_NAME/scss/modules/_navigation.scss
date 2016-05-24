@@ -5,7 +5,9 @@ nav {
 .mod_navigation {
 
   ul {
-    @include list-unstyled();
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   a,

@@ -31,7 +31,9 @@
 .ce_downloads {
 
   ul {
-    @include list-unstyled();
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   li {
