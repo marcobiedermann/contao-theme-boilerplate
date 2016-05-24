@@ -11,14 +11,10 @@ samp {
 
 pre {
   display: block;
-  margin: 0;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
   overflow: auto;
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-}
-
-
-.ce_code {
-  margin-bottom: $base-line-height;
 }
