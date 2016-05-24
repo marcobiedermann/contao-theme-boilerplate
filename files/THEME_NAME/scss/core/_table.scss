@@ -15,8 +15,6 @@ th {
 
 
 .ce_table {
-  -webkit-overflow-scrolling: touch;
-  overflow-x: scroll;
 
   thead {
 
@@ -99,11 +97,6 @@ th {
 
   .header {
 
-  }
-
-  @media (min-width: $media-sm) {
-    -webkit-overflow-scrolling: none;
-    overflow-x: none;
   }
 
 }
