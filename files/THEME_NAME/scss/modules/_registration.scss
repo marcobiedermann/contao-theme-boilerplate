@@ -1,3 +1,9 @@
-.mod_registration {
+$registration-bg-color: #f4f5f1;
+$registration-margin-bottom: 1.5rem;
+$registration-padding: 5%;
 
+.mod_registration {
+  background-color: $registration-bg-color;
+  margin-bottom: $registration-margin-bottom;
+  padding: $registration-padding;
 }

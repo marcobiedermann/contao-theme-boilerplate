@@ -1,14 +1,13 @@
-.mod_personalData {
+$personal-data-bg-color: #f4f5f1;
+$personal-data-margin-bottom: 1.5rem;
+$personal-data-padding: 5%;
 
+.mod_personalData {
+  background-color: $personal-data-bg-color;
+  margin-bottom: $personal-data-margin-bottom;
+  padding: $personal-data-padding;
 }
 
 .fields {
-  margin-bottom: -.5rem;
-  margin-left: 1.5rem;
-  margin-top: -.5rem;
-
-  > div {
-    padding: .5rem 0;
-  }
 
 }

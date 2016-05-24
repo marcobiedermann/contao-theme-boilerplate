@@ -1,3 +1,9 @@
-.mod_closeAccount {
+$close-account-bg-color: #f4f5f1;
+$close-account-margin-bottom: 1.5rem;
+$close-account-padding: 5%;
 
+.mod_closeAccount {
+  background-color: $close-account-bg-color;
+  margin-bottom: $close-account-margin-bottom;
+  padding: $close-account-padding;
 }

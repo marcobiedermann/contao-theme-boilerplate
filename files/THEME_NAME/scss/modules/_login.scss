@@ -1,4 +1,15 @@
+$login-bg-color: #f4f5f1;
+$login-margin-bottom: 1.5rem;
+$login-padding: 5%;
+
 .mod_login {
+  background-color: $login-bg-color;
+  margin-bottom: $login-margin-bottom;
+  padding: $login-padding;
+
+  .text {
+    margin-bottom: 1rem;
+  }
 
   .login_info {
 
