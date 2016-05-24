@@ -1,28 +1,25 @@
 .mod_search {
 
   .formbody {
-    @include clear();
+    display: flex;
   }
 
   .text,
   .submit {
-    float: left;
+
   }
 
   .text {
     -webkit-appearance: textfield;
-    padding: .5rem;
-    width: 75%;
+    flex-grow: 1;
   }
 
   .submit {
-    padding-left: 0;
-    padding-right: 0;
-    width: 25%;
+
   }
 
   .header {
-
+    font-size: .875rem;
   }
 
   > div {
@@ -46,7 +43,7 @@
   }
 
   .relevance {
-
+    font-size: .875rem;
   }
 
   .context {
@@ -54,8 +51,7 @@
   }
 
   .highlight {
-    color: $color-primary;
-    font-style: italic;
+    font-weight: 700;
   }
 
   .url {
