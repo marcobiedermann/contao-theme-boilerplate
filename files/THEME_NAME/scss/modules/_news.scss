@@ -9,7 +9,9 @@
 .mod_newsmenu {
 
   ul {
-    @include list-unstyled();
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   a {
@@ -47,17 +49,6 @@
   }
 
   .layout_latest {
-
-    .image_container {
-      margin-bottom: 1rem;
-
-      @media (min-width: $media-xs) {
-        margin: 0;
-        max-width: 10rem;
-        width: auto;
-      }
-
-    }
 
   }
 
