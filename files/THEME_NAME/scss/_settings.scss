@@ -7,6 +7,12 @@ $base-font-size: 1rem;
 $base-font-weight: 400;
 $base-line-height: 1.5;
 
+// Grid
+$grid-columns: 12;
+$grid-gutter: 3%;
+$grid-max-width: 64rem;
+$grid-width: 90%;
+
 // Media Queries
 $media-xs: 30em;
 $media-sm: 40em;

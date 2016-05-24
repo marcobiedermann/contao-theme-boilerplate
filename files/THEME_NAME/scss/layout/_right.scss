@@ -1,3 +1,7 @@
 #right {
 
+  @media (min-width: $media-sm) {
+    margin-left: $grid-gutter;
+  }
+
 }

@@ -12,4 +12,12 @@ header {
   color: $header-color;
   padding-bottom: $header-padding-vertical;
   padding-top: $header-padding-vertical;
+
+  .inside {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $grid-max-width;
+    width: $grid-width;
+  }
+
 }

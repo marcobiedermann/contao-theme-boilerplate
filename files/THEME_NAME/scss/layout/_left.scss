@@ -1,6 +1,7 @@
 #left {
 
   @media (min-width: $media-sm) {
+    margin-right: $grid-gutter;
     order: -1;
   }
 
