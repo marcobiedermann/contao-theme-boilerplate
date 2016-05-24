@@ -1,24 +1,30 @@
-$accordion-toggle-bg-color: #777;
+$accordion-toggle-bg-color: #222;
+$accordion-toggle-color: #fafafa;
 
 .ce_accordion {
-  margin-bottom: .25rem !important;
+  margin-bottom: .25rem;
 
-  &.last {
-    margin-bottom: $base-line-height !important;
+  &:last-of-type {
+    margin-bottom: 1.5rem;
   }
 
   .toggler {
     background-color: $accordion-toggle-bg-color;
+    color: $accordion-toggle-color;
     cursor: pointer;
     font-weight: bold;
     outline: 0;
     padding: .25rem .5rem;
   }
 
+  .ui-accordion-header-icon {
+    float: right;
+  }
+
   .accordion {
     @include clear();
 
-    padding: 1rem .5rem;
+    padding: 1rem;
   }
 
 }
