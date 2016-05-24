@@ -1,19 +1,38 @@
 $pagination-current-color: $color-primary;
 
 .pagination {
-  @include clear();
-
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: .75rem;
+  justify-content: space-between;
   margin-top: 1rem;
 
-  ul {
-    @include list-unstyled();
+  p {
+    margin: 0;
+  }
 
-    margin: -.5rem;
+  ul {
+    list-style: none;
+    margin: -.125rem;
+    padding: 0;
   }
 
   li {
     display: inline-block;
-    margin: .5rem;
+    margin: .125rem;
+  }
+
+  a,
+  span {
+    border: 1px solid #222;
+    display: inline-block;
+    padding: .125rem .5rem;
+  }
+
+  a {
+    background-color: #222;
+    color: #fafafa;
   }
 
   .link {
@@ -29,19 +48,7 @@ $pagination-current-color: $color-primary;
   }
 
   .current {
-    color: $pagination-current-color;
-  }
-
-  @media (min-width: $media-xs) {
-
-    p {
-      float: right;
-    }
-
-    ul {
-      text-align: center;
-    }
-
+    color: #222;
   }
 
 }
