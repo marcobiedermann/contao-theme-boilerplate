@@ -4,5 +4,10 @@ aside {
 
 #left,
 #right {
-  flex-basis: 25%;
+  flex-shrink: 0;
+
+  @media (min-width: $media-sm) {
+    flex-basis: 25%;
+  }
+
 }
