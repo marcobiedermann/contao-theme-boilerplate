@@ -1,8 +1,17 @@
+$download-margin-bottom: $base-line-height * 1rem;
+
+$download-anchor-padding-right: 1.5rem;
+
+$download-mime-icon-margin-right: .5rem;
+$download-mime-icon-margin-top: .25rem;
+
+$download-size-font-size: .875rem;
+
 .ce_download,
 .ce_downloads {
   @include clear();
 
-  margin-bottom: $base-line-height;
+  margin-bottom: $download-margin-bottom;
 
   a {
     @include clear();
@@ -12,18 +21,18 @@
     background-repeat: no-repeat;
     display: block;
     overflow: hidden;
-    padding-right: 1.5rem;
+    padding-right: $download-anchor-padding-right;
   }
 
   .mime_icon {
     float: left;
-    margin-right: .5rem;
-    margin-top: 3px;
+    margin-right: $download-mime-icon-margin-right;
+    margin-top: $download-mime-icon-margin-top;
   }
 
   .size {
     float: right;
-    font-size: .875rem;
+    font-size: $download-size-font-size;
   }
 
 }

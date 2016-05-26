@@ -1,3 +1,5 @@
+$image-margin-bottom: $base-line-height * 1rem;
+
 figure,
 figcaption, {
   display: block;
@@ -51,5 +53,5 @@ svg {
 }
 
 .ce_image {
-  margin-bottom: 1.5rem;
+  margin-bottom: $image-margin-bottom;
 }

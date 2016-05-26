@@ -1,5 +1,7 @@
+$youtube-margin-bottom: $base-line-height * 1rem;
+
 .ce_youtube {
-  margin-bottom: 1.5rem;
+  margin-bottom: $youtube-margin-bottom;
 
   video {
     height: auto;

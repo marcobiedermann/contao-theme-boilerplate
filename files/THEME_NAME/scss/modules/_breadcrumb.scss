@@ -1,8 +1,11 @@
+$breadcrumb-item-margin: .25rem;
+$breadcrumb-item-padding-right: 1rem;
+
 .mod_breadcrumb {
 
   ul {
     list-style: none;
-    margin: -.25rem;
+    margin: $breadcrumb-item-margin * -1;
     padding: 0;
   }
 
@@ -11,8 +14,8 @@
     background-position: 100% 50%;
     background-repeat: no-repeat;
     display: inline-block;
-    margin: .25rem;
-    padding-right: 1rem;
+    margin: $breadcrumb-item-margin;
+    padding-right: $breadcrumb-item-padding-right;
   }
 
   .last {

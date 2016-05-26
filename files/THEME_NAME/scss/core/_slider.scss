@@ -1,5 +1,7 @@
+$slider-margin-bottom: $base-line-height * 1rem;
+
 .ce_sliderStart {
-  margin-bottom: 1.5rem;
+  margin-bottom: $slider-margin-bottom;
 
   .content-slider {
 

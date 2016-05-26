@@ -1,13 +1,14 @@
 $anchor-color: $color-primary;
+$anchor-text-decoration: none;
+
 $anchor-hover-color: darken($anchor-color, 10%);
 
 a {
   background-color: transparent;
   border: 0;
-  border: 0;
   color: $anchor-color;
   outline: 0;
-  text-decoration: none;
+  text-decoration: $anchor-text-decoration;
   transition: background-color .3s, color .3s;
 
   &:hover,

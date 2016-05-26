@@ -1,7 +1,9 @@
+$gallery-margin-bottom: $base-line-height * 1rem;
+
 $gallery-item-gutter: 1%;
 
 .ce_gallery {
-  margin-bottom: 1.5rem;
+  margin-bottom: $gallery-margin-bottom;
 
   > ul {
     @include clear();

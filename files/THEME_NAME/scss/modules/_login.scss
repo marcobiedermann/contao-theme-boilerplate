@@ -1,6 +1,8 @@
 $login-bg-color: #f4f5f1;
-$login-margin-bottom: 1.5rem;
+$login-margin-bottom: $base-line-height * 1rem;
 $login-padding: 5%;
+
+$login-text-margin-bottom: 1rem;
 
 .mod_login {
   background-color: $login-bg-color;
@@ -8,7 +10,7 @@ $login-padding: 5%;
   padding: $login-padding;
 
   .text {
-    margin-bottom: 1rem;
+    margin-bottom: $login-text-margin-bottom;
   }
 
   .login_info {

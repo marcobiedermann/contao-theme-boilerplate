@@ -1,3 +1,5 @@
+$calendar-cell-padding: .5rem;
+
 .mod_calendar {
 
   table {
@@ -26,7 +28,7 @@
 
   th,
   td {
-    padding: .5rem;
+    padding: $calendar-cell-padding;
   }
 
   th {

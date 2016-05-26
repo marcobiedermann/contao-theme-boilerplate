@@ -1,11 +1,18 @@
+$accordion-margin-bottom: .25rem;
+$accordion-last-margin-bottom: $base-line-height * 1rem;
+
 $accordion-toggle-bg-color: #222;
 $accordion-toggle-color: #fafafa;
+$accordion-toggle-padding-horizontal: .5rem;
+$accordion-toggle-padding-vertical: .25rem;
+
+$accordion-accordion-padding: 1rem;
 
 .ce_accordion {
-  margin-bottom: .25rem;
+  margin-bottom: $accordion-margin-bottom;
 
   &:last-of-type {
-    margin-bottom: 1.5rem;
+    margin-bottom: $accordion-last-margin-bottom;
   }
 
   .toggler {
@@ -14,7 +21,7 @@ $accordion-toggle-color: #fafafa;
     cursor: pointer;
     font-weight: bold;
     outline: 0;
-    padding: .25rem .5rem;
+    padding: $accordion-toggle-padding-vertical $accordion-toggle-padding-horizontal;
   }
 
   .ui-accordion-header-icon {
@@ -24,7 +31,7 @@ $accordion-toggle-color: #fafafa;
   .accordion {
     @include clear();
 
-    padding: 1rem;
+    padding: $accordion-accordion-padding;
   }
 
 }

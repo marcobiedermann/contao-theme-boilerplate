@@ -1,22 +1,35 @@
-dl {
-  margin-bottom: 1.5rem;
-  margin-top: 0;
-}
+$list-margin-bottom: $base-line-height * 1rem;
+$list-margin-top: 0;
+$list-padding-left: $base-line-height * 1rem;
 
-dd {
-  margin: 0;
-  padding-left: 1.5rem;
+$list-list-margin-bottom: .5rem;
+
+dl,
+ol,
+ul {
+  margin-bottom: $list-margin-bottom;
+  margin-top: $list-margin-top;
+
+  dl
+  ol,
+  ul {
+    margin-bottom: $list-list-margin-bottom;
+  }
+
 }
 
 ol,
 ul {
-  margin-bottom: 1.5rem;
-  margin-top: 0;
-  padding-left: 1.5rem;
+  padding-left: $list-padding-left;
 }
 
 ul {
   list-style-type: square;
+}
+
+dd {
+  margin: 0;
+  padding-left: $list-padding-left;
 }
 
 .ce_list {

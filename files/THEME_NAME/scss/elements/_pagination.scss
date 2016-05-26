@@ -1,12 +1,21 @@
+$pagination-font-size: .75rem;
+$pagination-margin-top: 1rem;
+
+$pagination-item-margin: .125rem;
+
+$pagination-anchor-border-color: #222;
+$pagination-anchor-padding-horizontal: .125rem;
+$pagination-anchor-padding-vertical: .5rem;
+
 $pagination-current-color: $color-primary;
 
 .pagination {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  font-size: .75rem;
+  font-size: $pagination-font-size;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: $pagination-margin-top;
 
   p {
     margin: 0;
@@ -14,20 +23,20 @@ $pagination-current-color: $color-primary;
 
   ul {
     list-style: none;
-    margin: -.125rem;
+    margin: $pagination-item-margin * -1;
     padding: 0;
   }
 
   li {
     display: inline-block;
-    margin: .125rem;
+    margin: $pagination-item-margin;
   }
 
   a,
   span {
-    border: 1px solid #222;
+    border: 1px solid $pagination-anchor-border-color;
     display: inline-block;
-    padding: .125rem .5rem;
+    padding: $pagination-anchor-padding-horizontal $pagination-anchor-padding-vertical;
   }
 
   a {

@@ -1,3 +1,20 @@
+$blockquote-border-left-color: $border-color;
+$blockquote-border-left-width: .125rem;
+$blockquote-margin-bottom: $base-line-height * 1rem;
+$blockquote-margin-left: 0;
+$blockquote-margin-right: 0;
+$blockquote-margin-top: 0;
+$blockquote-padding-left: 1rem;
+
+$hr-bg-color: $border-color;
+$hr-height: 1px;
+$hr-margin-bottom: $base-line-height * 1rem;
+$hr-margin-top: 0;
+
+$paragraph-margin-bottom: $base-line-height * 1rem;
+$paragraph-margin-top: 0;
+$paragraph-max-width: 48em;
+
 em,
 dfn {
   font-style: italic;
@@ -13,12 +30,12 @@ strong {
 }
 
 blockquote {
-  border-left: .125rem solid $border-color;
-  margin-bottom: 1.5rem;
-  margin-right: 0;
-  margin-top: 0;
-  margin-left: 0;
-  padding-left: 1rem;
+  border-left: $blockquote-border-left-width solid $blockquote-border-left-color;
+  margin-bottom: $blockquote-margin-bottom;
+  margin-left: $blockquote-margin-left;
+  margin-right: $blockquote-margin-right;
+  margin-top: $blockquote-margin-top;
+  padding-left: $blockquote-padding-left;
 
   p {
     font-style: italic;
@@ -40,10 +57,18 @@ blockquote {
 
 }
 
+hr {
+  border: 0;
+  height: $hr-height;
+  background-color: $hr-bg-color;
+  margin-bottom: $hr-margin-bottom;
+  margin-top: $hr-margin-top;
+}
+
 p {
-  margin-bottom: 1.5rem;
-  margin-top: 0;
-  max-width: 48em;
+  margin-bottom: $paragraph-margin-bottom;
+  margin-top: $paragraph-margin-top;
+  max-width: $paragraph-max-width;
 }
 
 q {

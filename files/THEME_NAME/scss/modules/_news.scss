@@ -1,3 +1,7 @@
+$news-info-font-size: .875rem;
+
+$news-teaser-margin-bottom: 1rem;
+
 .mod_newsarchive {
 
 }
@@ -69,12 +73,12 @@
   }
 
   .info {
-    font-size: .875rem;
+    font-size: $news-info-font-size;
     margin: 0;
   }
 
   .teaser {
-    margin-bottom: 1rem;
+    margin-bottom: $news-teaser-margin-bottom;
     overflow: hidden;
   }
 

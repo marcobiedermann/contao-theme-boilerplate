@@ -1,6 +1,6 @@
 $h1-color: #222;
-$h1-font-family-fallback: inherit;
-$h1-font-family: inherit;
+$h1-font-family-fallback: $base-font-family-fallback;
+$h1-font-family: $base-font-family;
 $h1-font-size: 2.5rem;
 $h1-font-weight: 600;
 $h1-line-height: 1.2;
@@ -9,8 +9,8 @@ $h1-margin-top: 0;
 $h1-text-transform: uppercase;
 
 $h2-color: #222;
-$h2-font-family-fallback: inherit;
-$h2-font-family: inherit;
+$h2-font-family-fallback: $base-font-family-fallback;
+$h2-font-family: $base-font-family;
 $h2-font-size: 2rem;
 $h2-font-weight: 600;
 $h2-line-height: 1.2;
@@ -19,8 +19,8 @@ $h2-margin-top: 0;
 $h2-text-transform: uppercase;
 
 $h3-color: #222;
-$h3-font-family-fallback: inherit;
-$h3-font-family: inherit;
+$h3-font-family-fallback: $base-font-family-fallback;
+$h3-font-family: $base-font-family;
 $h3-font-size: 1.5rem;
 $h3-font-weight: 600;
 $h3-line-height: 1.2;
@@ -29,8 +29,8 @@ $h3-margin-top: 0;
 $h3-text-transform: uppercase;
 
 $h4-color: #222;
-$h4-font-family-fallback: inherit;
-$h4-font-family: inherit;
+$h4-font-family-fallback: $base-font-family-fallback;
+$h4-font-family: $base-font-family;
 $h4-font-size: 1.25rem;
 $h4-font-weight: 600;
 $h4-line-height: 1.2;
@@ -39,8 +39,8 @@ $h4-margin-top: 0;
 $h4-text-transform: uppercase;
 
 $h5-color: #222;
-$h5-font-family-fallback: inherit;
-$h5-font-family: inherit;
+$h5-font-family-fallback: $base-font-family-fallback;
+$h5-font-family: $base-font-family;
 $h5-font-size: 1.125rem;
 $h5-font-weight: 600;
 $h5-line-height: 1.2;
@@ -49,8 +49,8 @@ $h5-margin-top: 0;
 $h5-text-transform: uppercase;
 
 $h6-color: #222;
-$h6-font-family-fallback: inherit;
-$h6-font-family: inherit;
+$h6-font-family-fallback: $base-font-family-fallback;
+$h6-font-family: $base-font-family;
 $h6-font-size: 1rem;
 $h6-font-weight: 600;
 $h6-line-height: 1.2;
