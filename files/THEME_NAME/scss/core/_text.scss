@@ -99,22 +99,6 @@ sub {
 .ce_text {
   @include clear();
 
-  dl,
-  hr,
-  pre {
-    margin-bottom: 1.5rem;
-  }
-
-  li {
-    margin-bottom: .5rem;
-
-    ol,
-    ul {
-      margin-top: .5rem;
-    }
-
-  }
-
   p {
     @include clear();
 
