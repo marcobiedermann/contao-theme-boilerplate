@@ -7,7 +7,7 @@ aside {
   flex-shrink: 0;
 
   @media (min-width: $media-sm) {
-    flex-basis: 25%;
+    flex-basis: (25% - $grid-gutter / 2);
   }
 
 }
