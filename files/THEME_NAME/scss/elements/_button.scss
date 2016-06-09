@@ -1,9 +1,17 @@
+$button-bg-color: #222;
+$button-color: #fafafa;
+$button-padding-horizontal: .5rem;
+$button-padding-vertical: .25rem;
+
 .back,
 .more {
   @include clear();
 
   a {
+    background-color: $button-bg-color;
+    color: $button-color;
     display: inline-block;
+    padding: $button-padding-horizontal $button-padding-vertical;
   }
 
 }
