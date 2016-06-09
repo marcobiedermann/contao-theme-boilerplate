@@ -11,7 +11,7 @@ $button-padding-vertical: .25rem;
     background-color: $button-bg-color;
     color: $button-color;
     display: inline-block;
-    padding: $button-padding-horizontal $button-padding-vertical;
+    padding: $button-padding-vertical $button-padding-horizontal;
   }
 
 }
