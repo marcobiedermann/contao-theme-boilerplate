@@ -1,6 +1,6 @@
 $footer-bg-color: #222;
 $footer-color: #999;
-$footer-font-size: .875rem;
+$footer-font-size: .75rem;
 $footer-padding-vertical: 1rem;
 
 footer {
@@ -21,6 +21,15 @@ footer {
     margin-right: auto;
     max-width: $grid-max-width;
     width: $grid-width;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #fff;
   }
 
 }
