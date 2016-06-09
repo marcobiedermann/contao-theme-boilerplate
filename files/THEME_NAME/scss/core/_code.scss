@@ -1,6 +1,9 @@
 $code-font-family: 'Courier New';
 $code-font-family-fallback: monospace;
 
+$pre-bg-color: #f4f5f1;
+$pre-color: #222;
+$pre-font-size: .75rem;
 $pre-margin-bottom: $base-line-height * 1rem;
 $pre-margin-top: 0;
 
@@ -13,10 +16,14 @@ samp {
 }
 
 pre {
+  background-color: $pre-bg-color;
+  color: $pre-color;
   display: block;
+  font-size: $pre-font-size;
   margin-bottom: $pre-margin-bottom;
   margin-top: $pre-margin-top;
   overflow: auto;
+  padding: 1rem;
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
