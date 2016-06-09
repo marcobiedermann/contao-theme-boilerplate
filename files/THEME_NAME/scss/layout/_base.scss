@@ -39,6 +39,8 @@ html {
 body {
   background-color: $body-bg-color;
   color: $body-color;
+  display: flex;
+  flex-direction: columns;
   font-family: $body-font-family, $body-font-family-fallback;
   font-size: $body-font-size;
   font-weight: $body-font-weight;
