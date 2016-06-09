@@ -2,6 +2,8 @@ $news-info-font-size: .875rem;
 
 $news-teaser-margin-bottom: 1rem;
 
+$newsmenu-margin-bottom: $base-line-height * 1rem;
+
 .mod_newsarchive {
 
 }
@@ -11,6 +13,9 @@ $news-teaser-margin-bottom: 1rem;
 }
 
 .mod_newsmenu {
+  background-color: #f4f5f1;
+  margin-bottom: $newsmenu-margin-bottom;
+  padding: 5%;
 
   ul {
     list-style: none;
