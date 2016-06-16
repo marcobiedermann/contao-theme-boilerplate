@@ -140,7 +140,9 @@ textarea {
 
   .widget {
     @include clear();
-
+    
+    display: flex;
+    flex-direction: column;
     margin-bottom: 1rem;
   }
 
@@ -150,6 +152,7 @@ textarea {
 
   label {
     display: block;
+    order: -1;
 
     &.mandatory {
 
