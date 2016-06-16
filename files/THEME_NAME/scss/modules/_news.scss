@@ -43,6 +43,8 @@ $newsmenu-margin-bottom: $base-line-height * 1rem;
   .layout_simple,
   .layout_short {
     @include clear();
+
+    overflow: hidden;
   }
 
   .layout_full {
@@ -84,7 +86,6 @@ $newsmenu-margin-bottom: $base-line-height * 1rem;
 
   .teaser {
     margin-bottom: $news-teaser-margin-bottom;
-    overflow: hidden;
   }
 
 }
