@@ -2,6 +2,7 @@ $container-padding-vertical: 3rem;
 
 #container {
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
   margin-left: auto;
   margin-right: auto;
@@ -9,4 +10,9 @@ $container-padding-vertical: 3rem;
   padding-bottom: $container-padding-vertical;
   padding-top: $container-padding-vertical;
   width: $grid-width;
+
+  @media (min-width: $media-sm) {
+    flex-direction: row;
+  }
+
 }
