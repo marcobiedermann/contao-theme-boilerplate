@@ -33,3 +33,38 @@ nav {
   }
 
 }
+
+.navigation_main {
+
+  > ul {
+    display: flex;
+  }
+
+  li {
+    position: relative;
+
+    &:hover {
+
+      ul {
+        display: block;
+      }
+
+    }
+
+  }
+
+  ul {
+
+    ul {
+      display: none;
+      position: absolute;
+    }
+
+  }
+
+  a,
+  span {
+    padding: .25rem .5rem;
+  }
+
+}
