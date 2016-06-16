@@ -6,16 +6,14 @@ $gallery-item-gutter: 1%;
   margin-bottom: $gallery-margin-bottom;
 
   > ul {
-    @include clear();
-
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin: $gallery-item-gutter / -2;
     padding: 0;
 
     li {
-      float: left;
       margin: $gallery-item-gutter / 2;
-      width: (100% / 2 - $gallery-item-gutter);
     }
 
   }

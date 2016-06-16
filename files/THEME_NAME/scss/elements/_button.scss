@@ -5,7 +5,7 @@ $button-padding-vertical: .25rem;
 
 .back,
 .more {
-  @include clear();
+  display: flex;
 
   a {
     background-color: $button-bg-color;
@@ -18,16 +18,8 @@ $button-padding-vertical: .25rem;
 
 .back {
 
-  a {
-    float: left;
-  }
-
 }
 
 .more {
-
-  a {
-    float: right;
-  }
-
+  justify-content: flex-end;
 }
