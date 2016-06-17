@@ -51,7 +51,7 @@ Themes » THEME_NAME » Page layouts: Custom JavaScript code
 │   │   └── scss
 │   │       ├── _print.scss
 │   │       ├── _settings.scss
-│   │       ├── core
+│   │       ├── content
 │   │       │   ├── _accordion.scss
 │   │       │   ├── _code.scss
 │   │       │   ├── _comments.scss
