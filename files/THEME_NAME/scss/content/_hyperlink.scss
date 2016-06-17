@@ -9,7 +9,7 @@ a {
   color: $anchor-color;
   outline: 0;
   text-decoration: $anchor-text-decoration;
-  transition: background-color .3s, color .3s;
+  transition: background-color 0.3s, color 0.3s;
 
   &:hover,
   &:focus {

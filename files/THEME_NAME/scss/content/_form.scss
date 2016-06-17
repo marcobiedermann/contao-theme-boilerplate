@@ -26,7 +26,7 @@ textarea {
 
 input {
   box-shadow: none;
-  transition: background-color .3s, color .3s;
+  transition: background-color 0.3s, color 0.3s;
   vertical-align: middle;
 }
 
@@ -48,7 +48,7 @@ label {
 legend {
   border: 0;
   display: block;
-  padding: 0 .25rem;
+  padding: 0 0.25rem;
   position: relative;
 }
 
@@ -93,7 +93,7 @@ button,
 fieldset {
   border: 1px solid $border-color;
   margin: 0;
-  padding: .5rem;
+  padding: 0.5rem;
   position: relative;
 }
 
@@ -130,8 +130,8 @@ textarea {
 
   > table {
     border-collapse: separate;
-    border-spacing: .5rem;
-    margin: -.5rem;
+    border-spacing: 0.5rem;
+    margin: -0.5rem;
   }
 
   td {
@@ -140,7 +140,7 @@ textarea {
 
   .widget {
     @include clear();
-    
+
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
@@ -196,8 +196,8 @@ textarea {
     border: 1px solid $border-color;
     color: $input-color;
     float: left;
-    height: $base-line-height + (.25em * 2); // fixes line-height issue in FF & on select tag
-    padding: .25rem .5rem;
+    height: $base-line-height + (0.25em * 2); // fixes line-height issue in FF & on select tag
+    padding: 0.25rem 0.5rem;
     width: 100%;
 
     &:hover {
@@ -275,7 +275,7 @@ textarea {
   .radio {
     float: left;
     height: 1rem;
-    margin: .25rem .5rem 0 .25rem;
+    margin: 0.25rem 0.5rem 0 0.25rem;
   }
 
   .checkbox {
@@ -303,8 +303,8 @@ textarea {
     background-color: $btn-bg-color;
     border: 1px solid transparent;
     color: $btn-color;
-    height: $base-line-height + (.25em * 2);
-    padding: .25rem .5rem;
+    height: $base-line-height + (0.25em * 2);
+    padding: 0.25rem 0.5rem;
 
     &:hover,
     &:focus {
