@@ -54,6 +54,7 @@ Themes » THEME_NAME » Page layouts: Custom JavaScript code
 │   │       ├── core
 │   │       │   ├── _accordion.scss
 │   │       │   ├── _code.scss
+│   │       │   ├── _comments.scss
 │   │       │   ├── _downloads.scss
 │   │       │   ├── _form.scss
 │   │       │   ├── _gallery.scss
@@ -94,7 +95,6 @@ Themes » THEME_NAME » Page layouts: Custom JavaScript code
 │   │       │   ├── _calendar.scss
 │   │       │   ├── _changePassword.scss
 │   │       │   ├── _closeAccount.scss
-│   │       │   ├── _comments.scss
 │   │       │   ├── _customnav.scss
 │   │       │   ├── _events.scss
 │   │       │   ├── _faq.scss
