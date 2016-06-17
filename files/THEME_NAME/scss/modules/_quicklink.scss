@@ -1,20 +1,15 @@
 .mod_quicklink {
 
   .formbody {
-    @include clear();
-  }
-
-  .select,
-  .submit {
-    float: left;
+    display: flex;
   }
 
   .select {
-    width: 75%;
+    flex-grow: 1;
   }
 
   .submit {
-    width: 25%;
+
   }
 
 }
