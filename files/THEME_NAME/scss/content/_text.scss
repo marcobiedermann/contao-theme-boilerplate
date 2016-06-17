@@ -6,7 +6,7 @@ $blockquote-margin-right: 0;
 $blockquote-margin-top: 0;
 $blockquote-padding-left: 1rem;
 
-$hr-bg-color: $border-color;
+$hr-background-color: $border-color;
 $hr-height: 1px;
 $hr-margin-bottom: $base-line-height * 1rem;
 $hr-margin-top: 0;
@@ -60,7 +60,7 @@ blockquote {
 hr {
   border: 0;
   height: $hr-height;
-  background-color: $hr-bg-color;
+  background-color: $hr-background-color;
   margin-bottom: $hr-margin-bottom;
   margin-top: $hr-margin-top;
 }

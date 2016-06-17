@@ -1,4 +1,4 @@
-$header-bg-color: $base-bg-color;
+$header-background-color: $base-background-color;
 $header-color: $base-color;
 $header-padding-vertical: 1rem;
 
@@ -8,7 +8,7 @@ header {
 }
 
 #header {
-  background-color: $header-bg-color;
+  background-color: $header-background-color;
   color: $header-color;
   padding-bottom: $header-padding-vertical;
   padding-top: $header-padding-vertical;

@@ -1,10 +1,10 @@
-$subscribe-bg-color: #f4f5f1;
+$subscribe-background-color: #f4f5f1;
 $subscribe-margin-bottom: $base-line-height * 1rem;
 $subscribe-padding: 5%;
 
 .mod_subscribe,
 .mod_unsubscribe {
-  background-color: $subscribe-bg-color;
+  background-color: $subscribe-background-color;
   margin-bottom: $subscribe-margin-bottom;
   padding: $subscribe-padding;
 

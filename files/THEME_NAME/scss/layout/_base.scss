@@ -1,6 +1,6 @@
 $html-font-size: 100%;
 
-$body-bg-color: $base-bg-color;
+$body-background-color: $base-background-color;
 $body-color: $base-color;
 $body-font-family: $base-font-family;
 $body-font-family-fallback: $base-font-family-fallback;
@@ -21,7 +21,7 @@ $body-line-height: $base-line-height;
 -moz-::selection,
 ::selection {
   background: $body-color;
-  color: $body-bg-color;
+  color: $body-background-color;
   text-shadow: none;
 }
 
@@ -37,7 +37,7 @@ html {
 }
 
 body {
-  background-color: $body-bg-color;
+  background-color: $body-background-color;
   color: $body-color;
   display: flex;
   flex-direction: columns;

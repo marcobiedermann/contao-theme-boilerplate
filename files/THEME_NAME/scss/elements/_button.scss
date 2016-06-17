@@ -1,4 +1,4 @@
-$button-bg-color: #222;
+$button-background-color: #222;
 $button-color: #fafafa;
 $button-padding-horizontal: 0.5rem;
 $button-padding-vertical: 0.25rem;
@@ -8,7 +8,7 @@ $button-padding-vertical: 0.25rem;
   display: flex;
 
   a {
-    background-color: $button-bg-color;
+    background-color: $button-background-color;
     color: $button-color;
     display: inline-block;
     padding: $button-padding-vertical $button-padding-horizontal;

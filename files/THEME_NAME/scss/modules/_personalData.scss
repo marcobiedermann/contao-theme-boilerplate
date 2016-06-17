@@ -1,9 +1,9 @@
-$personal-data-bg-color: #f4f5f1;
+$personal-data-background-color: #f4f5f1;
 $personal-data-margin-bottom: $base-line-height * 1rem;
 $personal-data-padding: 5%;
 
 .mod_personalData {
-  background-color: $personal-data-bg-color;
+  background-color: $personal-data-background-color;
   margin-bottom: $personal-data-margin-bottom;
   padding: $personal-data-padding;
 }

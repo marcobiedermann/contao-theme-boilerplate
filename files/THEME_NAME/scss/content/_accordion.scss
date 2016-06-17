@@ -1,7 +1,7 @@
 $accordion-margin-bottom: 0.25rem;
 $accordion-last-margin-bottom: $base-line-height * 1rem;
 
-$accordion-toggle-bg-color: #222;
+$accordion-toggle-background-color: #222;
 $accordion-toggle-color: #fafafa;
 $accordion-toggle-padding-horizontal: 0.5rem;
 $accordion-toggle-padding-vertical: 0.25rem;
@@ -16,7 +16,7 @@ $accordion-accordion-padding: 1rem;
   }
 
   .toggler {
-    background-color: $accordion-toggle-bg-color;
+    background-color: $accordion-toggle-background-color;
     color: $accordion-toggle-color;
     cursor: pointer;
     font-weight: bold;
