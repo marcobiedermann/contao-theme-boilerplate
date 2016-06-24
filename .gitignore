@@ -32,6 +32,7 @@ nbproject
 # Contao Files and Folders
 .github
 .tx
+app
 assets
 check
 contao
@@ -42,8 +43,10 @@ system
 templates/.htaccess
 templates/index.html
 vendor
+web
 
 .htaccess.default
+CHANGELOG.md
 build.xml
 composer.json
 composer.lock

@@ -3,7 +3,7 @@
 Modular [Contao CMS](https://contao.org/) theme boilerplate with some basic styles in [Scss](http://sass-lang.com/) to get you right started.
 
 ## Compatible
-Compatible Version: [Contao 3.5.14](https://download.contao.org/3.5.14/zip)
+Compatible with Contao 4.2.X and 3.5.X
 
 ## Installation
 

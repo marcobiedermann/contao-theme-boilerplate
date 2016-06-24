@@ -11,7 +11,8 @@ nav {
   }
 
   a,
-  span {
+  span,
+  strong {
     display: block;
 
     &:hover,
@@ -21,13 +22,18 @@ nav {
 
   }
 
-  span.active,
-  span.trail {
-    color: $color-primary;
+  span,
+  strong {
 
-    &:hover,
-    &:focus {
-      color: $color-primary-hover;
+    &.active,
+    &.trail {
+      color: $color-primary;
+
+      &:hover,
+      &:focus {
+        color: $color-primary-hover;
+      }
+
     }
 
   }
@@ -63,7 +69,8 @@ nav {
   }
 
   a,
-  span {
+  span,
+  strong {
     padding: 0.25rem 0.5rem;
   }
 
